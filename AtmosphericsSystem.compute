@@ -1,0 +1,51 @@
+﻿#pragma kernel CSMain
+
+#define thread_group_size_x 4
+#define thread_group_size_y 4
+
+struct Position
+{
+	float3 pos;
+};
+
+struct Velocity
+{
+	float3 vel;
+};
+
+struct Properties
+{
+	float molesOxygen;
+	float molesNitrogen;
+	float molesCarbonDioxide;
+	float molesNitrousOxide; 
+	float molesPlasma;
+	float molesBZ;
+	float molesFreon;
+	float pressure;
+	float temperature;
+	bool hasAtmosphere;
+};
+
+struct Neighbours
+{
+	float2 neighbours[4];
+};
+
+struct DeltaTime
+{
+	float deltaTime;
+};
+
+RWStructuredBuffer<Position> 	posBuffer;
+RWStructuredBuffer<Velocity> 	velBuffer;
+RWStructuredBuffer<Properties>	iOBuffer;
+RWStructuredBuffer<Properties> 	propertiesBuffer;
+RWStructuredBuffer<Neighbours> 	neighboursBuffer;
+RWStructuredBuffer<DeltaTime> 	deltaTimeBuffer;
+
+[numthreads(thread_group_size_x, thread_group_size_y, 1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+	
+}

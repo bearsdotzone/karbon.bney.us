@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="mainstyle.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+  <svg class="defs-only" id="filterElement"><filter id="colorizeCommon" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.8046875
+ 0 0 0 0 0.6171875 0 0 0 0 0.546875 0 0 0 1 0" />
+ </filter></svg><svg class="defs-only" id="filterElement"><filter id="colorizeUncommon" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.90234375
+ 0 0 0 0 0.88671875 0 0 0 0 0.90234375 0 0 0 1 0" />
+ </filter></svg><svg class="defs-only" id="filterElement"><filter id="colorizeRare" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.96484375
+ 0 0 0 0 0.88671875 0 0 0 0 0.70703125 0 0 0 1 0" />
+ </filter></svg><svg class="defs-only" id="filterElement"><filter id="colorizeLegendary" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.96484375
+ 0 0 0 0 0.94921875 0 0 0 0 0.96484375 0 0 0 1 0" />
+ </filter></svg><svg class="defs-only" id="filterElement"><filter id="colorizeOmega" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.67578125
+ 0 0 0 0 0.6015625 0 0 0 0 0.8046875 0 0 0 1 0" />
+ </filter></svg>
+  <div id="dummyElement">
+  </div>
+  <div id="forefront">
+    <h1>The Simulacrum</h1>
+    <div id="weaponGet">
+      <form autocomplete="off" onsubmit="return false" id="weaponSelect">
+        <div class="autocomplete">
+          <input id="inputWeapon" type="text" name="myCountry" placeholder="Search, ex. 'Acrid,' 'Argonak,' 'Tiberon'">
+        </div>
+        <input id="submit" type="submit" value="Get Weapon">
+      </form>
+	  <button class="new-button" onclick="showMakeWeapon()">Create Weapon</button>
+    </div>
+    <div class="clear"></div>
+    <div id=genInfo>
+      <div id="GunNameHere"></div>
+      <div id="FireModeHere"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="activeModBox">
+      <div id="slot0" class="modslot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="slot1" class="modslot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="slot2" class="modslot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="slot3" class="modslot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="clear"></div>
+      <div id="slot4" class="modslot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="slot5" class="modslot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="slot6" class="modslot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="slot7" class="modslot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div id="weaponInfo">
+      <div class="AfireMode" id="FireMode0">
+        <div class="StatBlock" id="FireMode0Impact">
+          <div class="StatDisplay"></div>
+          <div class="StatName">IMPACT</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Puncture">
+          <div class="StatDisplay"></div>
+          <div class="StatName">PUNCTURE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Slash">
+          <div class="StatDisplay"></div>
+          <div class="StatName">SLASH</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Cold">
+          <div class="StatDisplay"></div>
+          <div class="StatName">COLD</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Electricity">
+          <div class="StatDisplay"></div>
+          <div class="StatName">ELECTRICITY</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Heat">
+          <div class="StatDisplay"></div>
+          <div class="StatName">HEAT</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Toxin">
+          <div class="StatDisplay"></div>
+          <div class="StatName">TOXIN</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Blast">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BLAST</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Corrosive">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CORROSIVE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Gas">
+          <div class="StatDisplay"></div>
+          <div class="StatName">GAS</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Magnetic">
+          <div class="StatDisplay"></div>
+          <div class="StatName">MAGNETIC</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Radiation">
+          <div class="StatDisplay"></div>
+          <div class="StatName">RADIATION</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Viral">
+          <div class="StatDisplay"></div>
+          <div class="StatName">VIRAL</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0FactionCorpus">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE TO CORPUS<input id="FireMode0FactionCorpusChecked" onclick="calculateStatistics()" type="checkbox" checked></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0FactionGrineer">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE TO GRINEER<input id="FireMode0FactionGrineerChecked" onclick="calculateStatistics()" type="checkbox" checked></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0FactionInfested">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE TO INFESTED<input id="FireMode0FactionInfestedChecked" onclick="calculateStatistics()" type="checkbox" checked></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0FactionCorrupted">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE TO CORRUPTED<input id="FireMode0FactionCorruptedChecked" onclick="calculateStatistics()" type="checkbox" checked></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Accuracy">
+          <div class="StatDisplay"></div>
+          <div class="StatName">ACCURACY</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Bullets">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BULLETS</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Pellets">
+          <div class="StatDisplay"></div>
+          <div class="StatName">PELLETS</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0ChargeTime">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CHARGE TIME</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0ChargeDelay">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CHARGE DELAY</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0BurstFireRate">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BURST FIRE RATE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0BurstDelay">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BURST DELAY</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0BurstCount">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BURST COUNT</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0FireRate">
+          <div class="StatDisplay"></div>
+          <div class="StatName">FIRE RATE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0CritChance">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CRITICAL CHANCE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0CritMultiplier">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CRITICAL MULTIPLIER</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0StatusChance">
+          <div class="StatDisplay"></div>
+          <div class="StatName">STATUS CHANCE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Magazine">
+          <div class="StatDisplay"></div>
+          <div class="StatName">MAGAZINE SIZE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0ReloadTime">
+          <div class="StatDisplay"></div>
+          <div class="StatName">RELOAD TIME</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0AmmoMax">
+          <div class="StatDisplay"></div>
+          <div class="StatName">AMMO MAX</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Margin">
+          <div class="StatDisplay"></div>
+          <div class="StatName"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Damage">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE PER TRIGGER</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0BurstDPS">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BURST DAMAGE PER SECOND</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0SustainDPS">
+          <div class="StatDisplay"></div>
+          <div class="StatName">SUSTAINED DAMAGE PER SECOND</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0Margin">
+          <div class="StatDisplay"></div>
+          <div class="StatName"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0StatusEffects">
+          <div class="StatDisplay"></div>
+          <div class="StatName">STATUS PROCS PER TRIGGER</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0StatusEffectsPerSecond">
+          <div class="StatDisplay"></div>
+          <div class="StatName">STATUS PROCS PER SECOND</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode0StatusEffectsSustain">
+          <div class="StatDisplay"></div>
+          <div class="StatName">SUSTAINED STATUS PROCS PER SECOND</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock">
+          <button class="sim-button" onclick="showSimulations()" id="FireMode0ModalBtn">Simulations</button>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="AfireMode" id="FireMode1">
+        <div class="StatBlock" id="FireMode1Impact">
+          <div class="StatDisplay"></div>
+          <div class="StatName">IMPACT</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Puncture">
+          <div class="StatDisplay"></div>
+          <div class="StatName">PUNCTURE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Slash">
+          <div class="StatDisplay"></div>
+          <div class="StatName">SLASH</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Cold">
+          <div class="StatDisplay"></div>
+          <div class="StatName">COLD</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Electricity">
+          <div class="StatDisplay"></div>
+          <div class="StatName">ELECTRICITY</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Heat">
+          <div class="StatDisplay"></div>
+          <div class="StatName">HEAT</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Toxin">
+          <div class="StatDisplay"></div>
+          <div class="StatName">TOXIN</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Blast">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BLAST</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Corrosive">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CORROSIVE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Gas">
+          <div class="StatDisplay"></div>
+          <div class="StatName">GAS</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Magnetic">
+          <div class="StatDisplay"></div>
+          <div class="StatName">MAGNETIC</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Radiation">
+          <div class="StatDisplay"></div>
+          <div class="StatName">RADIATION</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Viral">
+          <div class="StatDisplay"></div>
+          <div class="StatName">VIRAL</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1FactionCorpus">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE TO CORPUS<input id="FireMode1FactionCorpusChecked" onclick="calculateStatistics()" type="checkbox" checked></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1FactionGrineer">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE TO GRINEER<input id="FireMode1FactionGrineerChecked" onclick="calculateStatistics()" type="checkbox" checked></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1FactionInfested">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE TO INFESTED<input id="FireMode1FactionInfestedChecked" onclick="calculateStatistics()" type="checkbox" checked></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1FactionCorrupted">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE TO CORRUPTED<input id="FireMode1FactionCorruptedChecked" onclick="calculateStatistics()" type="checkbox" checked></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Accuracy">
+          <div class="StatDisplay"></div>
+          <div class="StatName">ACCURACY</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Bullets">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BULLETS</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Pellets">
+          <div class="StatDisplay"></div>
+          <div class="StatName">PELLETS</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1ChargeTime">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CHARGE TIME</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1ChargeDelay">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CHARGE DELAY</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1BurstFireRate">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BURST FIRE RATE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1BurstDelay">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BURST DELAY</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1BurstCount">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BURST COUNT</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1FireRate">
+          <div class="StatDisplay"></div>
+          <div class="StatName">FIRE RATE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1CritChance">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CRITICAL CHANCE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1CritMultiplier">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CRITICAL MULTIPLIER</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1StatusChance">
+          <div class="StatDisplay"></div>
+          <div class="StatName">STATUS CHANCE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Magazine">
+          <div class="StatDisplay"></div>
+          <div class="StatName">MAGAZINE SIZE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1ReloadTime">
+          <div class="StatDisplay"></div>
+          <div class="StatName">RELOAD TIME</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1AmmoMax">
+          <div class="StatDisplay"></div>
+          <div class="StatName">AMMO MAX</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Margin">
+          <div class="StatDisplay"></div>
+          <div class="StatName"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Damage">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE PER TRIGGER</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1BurstDPS">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BURST DAMAGE PER SECOND</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1SustainDPS">
+          <div class="StatDisplay"></div>
+          <div class="StatName">SUSTAINED DAMAGE PER SECOND</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1Margin">
+          <div class="StatDisplay"></div>
+          <div class="StatName"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1StatusEffects">
+          <div class="StatDisplay"></div>
+          <div class="StatName">STATUS PROCS PER TRIGGER</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1StatusEffectsPerSecond">
+          <div class="StatDisplay"></div>
+          <div class="StatName">STATUS PROCS PER SECOND</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode1StatusEffectsSustain">
+          <div class="StatDisplay"></div>
+          <div class="StatName">SUSTAINED STATUS PROCS PER SECOND</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock">
+          <button class="sim-button" onclick="showSimulations()" id="FireMode1ModalBtn">Simulations</button>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="AfireMode" id="FireMode2">
+        <div class="StatBlock" id="FireMode2Impact">
+          <div class="StatDisplay"></div>
+          <div class="StatName">IMPACT</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Puncture">
+          <div class="StatDisplay"></div>
+          <div class="StatName">PUNCTURE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Slash">
+          <div class="StatDisplay"></div>
+          <div class="StatName">SLASH</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Cold">
+          <div class="StatDisplay"></div>
+          <div class="StatName">COLD</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Electricity">
+          <div class="StatDisplay"></div>
+          <div class="StatName">ELECTRICITY</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Heat">
+          <div class="StatDisplay"></div>
+          <div class="StatName">HEAT</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Toxin">
+          <div class="StatDisplay"></div>
+          <div class="StatName">TOXIN</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Blast">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BLAST</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Corrosive">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CORROSIVE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Gas">
+          <div class="StatDisplay"></div>
+          <div class="StatName">GAS</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Magnetic">
+          <div class="StatDisplay"></div>
+          <div class="StatName">MAGNETIC</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Radiation">
+          <div class="StatDisplay"></div>
+          <div class="StatName">RADIATION</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Viral">
+          <div class="StatDisplay"></div>
+          <div class="StatName">VIRAL</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2FactionCorpus">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE TO CORPUS<input id="FireMode2FactionCorpusChecked" onclick="calculateStatistics()" type="checkbox" checked></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2FactionGrineer">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE TO GRINEER<input id="FireMode2FactionGrineerChecked" onclick="calculateStatistics()" type="checkbox" checked></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2FactionInfested">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE TO INFESTED<input id="FireMode2FactionInfestedChecked" onclick="calculateStatistics()" type="checkbox" checked></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2FactionCorrupted">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE TO CORRUPTED<input id="FireMode2FactionCorruptedChecked" onclick="calculateStatistics()" type="checkbox" checked></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Accuracy">
+          <div class="StatDisplay"></div>
+          <div class="StatName">ACCURACY</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Bullets">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BULLETS</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Pellets">
+          <div class="StatDisplay"></div>
+          <div class="StatName">PELLETS</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2ChargeTime">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CHARGE TIME</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2ChargeDelay">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CHARGE DELAY</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2BurstFireRate">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BURST FIRE RATE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2BurstDelay">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BURST DELAY</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2BurstCount">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BURST COUNT</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2FireRate">
+          <div class="StatDisplay"></div>
+          <div class="StatName">FIRE RATE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2CritChance">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CRITICAL CHANCE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2CritMultiplier">
+          <div class="StatDisplay"></div>
+          <div class="StatName">CRITICAL MULTIPLIER</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2StatusChance">
+          <div class="StatDisplay"></div>
+          <div class="StatName">STATUS CHANCE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Magazine">
+          <div class="StatDisplay"></div>
+          <div class="StatName">MAGAZINE SIZE</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2ReloadTime">
+          <div class="StatDisplay"></div>
+          <div class="StatName">RELOAD TIME</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2AmmoMax">
+          <div class="StatDisplay"></div>
+          <div class="StatName">AMMO MAX</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Margin">
+          <div class="StatDisplay"></div>
+          <div class="StatName"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Damage">
+          <div class="StatDisplay"></div>
+          <div class="StatName">DAMAGE PER TRIGGER</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2BurstDPS">
+          <div class="StatDisplay"></div>
+          <div class="StatName">BURST DAMAGE PER SECOND</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2SustainDPS">
+          <div class="StatDisplay"></div>
+          <div class="StatName">SUSTAINED DAMAGE PER SECOND</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2Margin">
+          <div class="StatDisplay"></div>
+          <div class="StatName"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2StatusEffects">
+          <div class="StatDisplay"></div>
+          <div class="StatName">STATUS PROCS PER TRIGGER</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2StatusEffectsPerSecond">
+          <div class="StatDisplay"></div>
+          <div class="StatName">STATUS PROCS PER SECOND</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock" id="FireMode2StatusEffectsSustain">
+          <div class="StatDisplay"></div>
+          <div class="StatName">SUSTAINED STATUS PROCS PER SECOND</div>
+        </div>
+        <div class="clear"></div>
+        <div class="StatBlock">
+          <button class="sim-button" onclick="showSimulations()" id="FireMode1ModalBtn">Simulations</button>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div id="rivenbar">
+      <button class="rivenbutton" onclick="showRivenMaker()">Create Riven</button>
+    </div>
+    <div id="inactiveModBox">
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div id="snackbar">Some text some message...</div>
+  <div id="end">
+    <div id="endInner">
+		<div id="creator">
+			Created and maintained by Karbon Kitt
+		</div>
+    </div>
+  </div>
+  <div id="simulationsModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close" id="closeSimulation">&times;</span>
+        <h2>Time-To-Kill Simulations</h2>
+      </div>
+      <div class="modal-body">
+        <div class="simOption">
+          <span class="simOptionName"># of Simulations:</span>
+          <span class="simOptionValue" id="simulationNumberValue">1000</span>
+          <span class="simOptionSlider"><input type="range" min="1" max="10000" value="1000" class="slider" id="simulationNumberSlider"></span>
+        </div>
+        <button class="option-accordian" id="simWeaponOptions">Simulation Weapon Options</button>
+        <div class="content-accordian">
+          <div class="simOption">
+            <span class="simOptionName">Overall accuracy:</span>
+            <span class="simOptionValue" id="overallAccuracyValue">85%</span>
+            <span class="simOptionSlider"><input type="range" min="0" max="100" value="85" class="slider" id="overallAccuracySlider"></span>
+          </div>
+          <div class="simOption">
+            <span class="simOptionName">Headshot accuracy:</span>
+            <span class="simOptionValue" id="headshotAccuracyValue">50%</span>
+            <span class="simOptionSlider"><input type="range" min="0" max="100" value="50" class="slider" id="headshotAccuracySlider"></span>
+          </div>
+        </div>
+        <button class="option-accordian" id="simTargetOptions">Simulation Target Options</button>
+        <div class="content-accordian">
+          <div class="simOption">
+            <span class="simOptionName">Target:</span>
+            <span class="simOptionValue" id="targetNameValue">[PH] Elite Lancer </span>
+          </div>
+          <div class="simOption">
+            <span class="simOptionName">Target level:</span>
+            <span class="simOptionValue" id="targetLevelValue">30</span>
+            <span class="simOptionSlider"><input type="range" min="15" max="1000" value="30" class="slider" id="targetLevelSlider"></span>
+          </div>
+        </div>
+        <div class="wideboi">
+          <button class="sim-button" onclick="Simulate()">Simulate</button>
+          <span class="TTKSpan" id="TTK"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="rivenCreateModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close" id="closeRivenCreate">&times;</span>
+        <h2>Create a Riven:</h2>
+      </div>
+      <div class="modal-body">
+        <div class="rivenOption">Name<input type="text" id="rivenName"></div>
+        <div class="rivenOption">Polarity</div>
+        <div class="rivenOption">Effects: (At max rank)</div>
+        <div class="rivenOption">
+          <select id="rivenEffectType0">
+            <option value="None"></option>
+            <option value="MultishotMod">Multishot</option>
+            <option value="DamageMod">Damage</option>
+            <option value="ImpactMod">Impact</option>
+            <option value="PunctureMod">Puncture</option>
+            <option value="SlashMod">Slash</option>
+            <option value="CritChanceMod">Critical Chance</option>
+            <option value="CritMultiplierMod">Critical Damage</option>
+            <option value="ColdMod">Cold</option>
+            <option value="ElectricityMod">Electricity</option>
+            <option value="HeatMod">Heat</option>
+            <option value="ToxinMod">Toxin</option>
+            <option value="StatusChanceMod">Status Chance</option>
+            <option value="StatusDurationMod">Status Duration</option>
+            <option value="CorpusFactionMod">Damage to Corpus</option>
+            <option value="GrineerFactionMod">Damage to Grineer</option>
+            <option value="InfestedFactionMod">Damage to Infested</option>
+            <option value="FireRateMod">Fire Rate</option>
+            <option value="MagazineMod">Magazine Capacity</option>
+            <option value="AmmoMaxMod">Ammo Maximum</option>
+            <option value="FlightSpeedMod">Flight Speed</option>
+            <option value="ReloadTimeMod">Reload Speed</option>
+            <option value="RecoilMod">Weapon Recoil</option>
+            <option value="ZoomMod">Zoom</option>
+            <option value="PunchThroughMod">Punch Through</option>
+          </select>
+          <input type="text" class="rivenEffectValue" id="rivenEffectValue0">
+        </div>
+        <div class="rivenOption">
+          <select id="rivenEffectType1">
+            <option value="None"></option>
+            <option value="MultishotMod">Multishot</option>
+            <option value="DamageMod">Damage</option>
+            <option value="ImpactMod">Impact</option>
+            <option value="PunctureMod">Puncture</option>
+            <option value="SlashMod">Slash</option>
+            <option value="CritChanceMod">Critical Chance</option>
+            <option value="CritMultiplierMod">Critical Damage</option>
+            <option value="ColdMod">Cold</option>
+            <option value="ElectricityMod">Electricity</option>
+            <option value="HeatMod">Heat</option>
+            <option value="ToxinMod">Toxin</option>
+            <option value="StatusChanceMod">Status Chance</option>
+            <option value="StatusDurationMod">Status Duration</option>
+            <option value="CorpusFactionMod">Damage to Corpus</option>
+            <option value="GrineerFactionMod">Damage to Grineer</option>
+            <option value="InfestedFactionMod">Damage to Infested</option>
+            <option value="FireRateMod">Fire Rate</option>
+            <option value="MagazineMod">Magazine Capacity</option>
+            <option value="AmmoMaxMod">Ammo Maximum</option>
+            <option value="FlightSpeedMod">Flight Speed</option>
+            <option value="ReloadTimeMod">Reload Speed</option>
+            <option value="RecoilMod">Weapon Recoil</option>
+            <option value="ZoomMod">Zoom</option>
+            <option value="PunchThroughMod">Punch Through</option>
+          </select>
+          <input type="text" class="rivenEffectValue" id="rivenEffectValue1">
+        </div>
+        <div class="rivenOption">
+          <select id="rivenEffectType2">
+            <option value="None"></option>
+            <option value="MultishotMod">Multishot</option>
+            <option value="DamageMod">Damage</option>
+            <option value="ImpactMod">Impact</option>
+            <option value="PunctureMod">Puncture</option>
+            <option value="SlashMod">Slash</option>
+            <option value="CritChanceMod">Critical Chance</option>
+            <option value="CritMultiplierMod">Critical Damage</option>
+            <option value="ColdMod">Cold</option>
+            <option value="ElectricityMod">Electricity</option>
+            <option value="HeatMod">Heat</option>
+            <option value="ToxinMod">Toxin</option>
+            <option value="StatusChanceMod">Status Chance</option>
+            <option value="StatusDurationMod">Status Duration</option>
+            <option value="CorpusFactionMod">Damage to Corpus</option>
+            <option value="GrineerFactionMod">Damage to Grineer</option>
+            <option value="InfestedFactionMod">Damage to Infested</option>
+            <option value="FireRateMod">Fire Rate</option>
+            <option value="MagazineMod">Magazine Capacity</option>
+            <option value="AmmoMaxMod">Ammo Maximum</option>
+            <option value="FlightSpeedMod">Flight Speed</option>
+            <option value="ReloadTimeMod">Reload Speed</option>
+            <option value="RecoilMod">Weapon Recoil</option>
+            <option value="ZoomMod">Zoom</option>
+            <option value="PunchThroughMod">Punch Through</option>
+          </select>
+          <input type="text" class="rivenEffectValue" id="rivenEffectValue2">
+        </div>
+        <div class="rivenOption">
+          <select id="rivenEffectType3">
+            <option value="None"></option>
+            <option value="MultishotMod">Multishot</option>
+            <option value="DamageMod">Damage</option>
+            <option value="ImpactMod">Impact</option>
+            <option value="PunctureMod">Puncture</option>
+            <option value="SlashMod">Slash</option>
+            <option value="CritChanceMod">Critical Chance</option>
+            <option value="CritMultiplierMod">Critical Damage</option>
+            <option value="ColdMod">Cold</option>
+            <option value="ElectricityMod">Electricity</option>
+            <option value="HeatMod">Heat</option>
+            <option value="ToxinMod">Toxin</option>
+            <option value="StatusChanceMod">Status Chance</option>
+            <option value="StatusDurationMod">Status Duration</option>
+            <option value="CorpusFactionMod">Damage to Corpus</option>
+            <option value="GrineerFactionMod">Damage to Grineer</option>
+            <option value="InfestedFactionMod">Damage to Infested</option>
+            <option value="FireRateMod">Fire Rate</option>
+            <option value="MagazineMod">Magazine Capacity</option>
+            <option value="AmmoMaxMod">Ammo Maximum</option>
+            <option value="FlightSpeedMod">Flight Speed</option>
+            <option value="ReloadTimeMod">Reload Speed</option>
+            <option value="RecoilMod">Weapon Recoil</option>
+            <option value="ZoomMod">Zoom</option>
+            <option value="PunchThroughMod">Punch Through</option>
+          </select>
+          <input type="text" class="rivenEffectValue" id="rivenEffectValue3">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button onclick="GenerateRiven()">Generate Riven</button>
+      </div>
+    </div>
+  </div>
+  <div id="weaponCreateModal" class="modal">
+  <div class="modal-content">
+      <div class="modal-header">
+        <span class="close" id="closeWeaponCreate">&times;</span>
+        <h2>Create a New Weapon</h2>
+      </div>
+	  <div class="modal-body">
+	  <div class="weaponOption">Weapon Name<input type="text" id="weaponMakeName"></div>
+	  <div class="weaponOption">
+	    <div class="radio-toggle">
+          <input type="radio" name = "weaponMakeType" value = "Rifle" class="custom-radio" id="MakeRifle" checked="yes">
+          <label for="MakeRifle">Rifle</label>
+        </div>
+        <div class="radio-toggle">
+          <input type="radio" name = "weaponMakeType" value = "Shotgun" class="custom-radio" id="MakeShotgun">
+          <label for="MakeShotgun">Shotgun</label>
+        </div>
+		<div class="radio-toggle">
+          <input type="radio" name = "weaponMakeType" value = "Secondary" class="custom-radio" id="MakeSecondary">
+          <label for="MakeSecondary">Secondary</label>
+        </div>
+      </div>
+	  <div class="weaponOption">
+	      <select id="makeFireMode">
+			<option value="Default">Semi-Auto</option>
+			<option value="Auto">Full-Auto</option>
+			<option value="Charge">Charge</option>
+			<option value="Burst">Burst-Fire</option>
+		  </select>
+	  </div>
+	  <div class="weaponOption">Impact<input type="text" id="weaponMakeImpact"></div>
+	  <div class="weaponOption">Puncture<input type="text" id="weaponMakePuncture"></div>
+	  <div class="weaponOption">Slash<input type="text" id="weaponMakeSlash"></div>
+	  <div class="weaponOption">Cold<input type="text" id="weaponMakeCold"></div>
+	  <div class="weaponOption">Electricity<input type="text" id="weaponMakeElectricity"></div>
+	  <div class="weaponOption">Heat<input type="text" id="weaponMakeHeat"></div>
+	  <div class="weaponOption">Toxin<input type="text" id="weaponMakeToxin"></div>
+	  <div class="weaponOption">Blast<input type="text" id="weaponMakeBlast"></div>
+	  <div class="weaponOption">Corrosive<input type="text" id="weaponMakeCorrosive"></div>
+	  <div class="weaponOption">Gas<input type="text" id="weaponMakeGas"></div>
+	  <div class="weaponOption">Magnetic<input type="text" id="weaponMakeMagnetic"></div>
+	  <div class="weaponOption">Radiation<input type="text" id="weaponMakeRadiation"></div>
+	  <div class="weaponOption">Viral<input type="text" id="weaponMakeViral"></div>
+	  <div class="weaponOption">Accuracy<input type="text" id="weaponMakeAccuracy"></div>
+	  <div class="weaponOption">Bullets<input type="text" id="weaponMakeBullets"></div>
+	  <div class="weaponOption">Fire Rate<input type="text" id="weaponMakeFireRate"></div>
+	  <div class="weaponOption">Critical Chance<input type="text" id="weaponMakeCriticalChance"></div>
+	  <div class="weaponOption">Critical Multiplier<input type="text" id="weaponMakeCriticalMultiplier"></div>
+	  <div class="weaponOption">Status Chance<input type="text" id="weaponMakeStatusChance"></div>
+	  <div class="weaponOption">Magazine Size<input type="text" id="weaponMakeMagazineSize"></div>
+	  <div class="weaponOption">Reload Time<input type="text" id="weaponMakeReloadTime"></div>
+	  <div class="weaponOption">Ammo Max<input type="text" id="weaponMakeAmmoMax"></div>
+	  <div class="clear"></div>
+	  </div>
+	  <div class="modal-footer">
+        <button onclick="GenerateWeapon()">Generate Weapon</button>
+      </div>
+  </div>
+</body>
+
+<footer>
+  <script defer type="text/javascript" src="gunData.json"></script>
+  <script defer type="text/javascript" src="modData.json"></script>
+  <script defer type="text/javascript" src="targetData.json"></script>
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      var src = document.getElementById(data);
+      var tgt = ev.currentTarget.firstElementChild;
+      if (tgt !== null) {
+        var srcParent = src.parentNode;
+        ev.currentTarget.replaceChild(src, tgt);
+        srcParent.appendChild(tgt);
+      } else {
+        ev.target.appendChild(document.getElementById(data));
+      }
+      calculateStatistics();
+    }
+    var modal = document.getElementById('simulationsModal');
+    var rivenMake = document.getElementById('rivenCreateModal');
+	var weaponMakeModal = document.getElementById('weaponCreateModal');
+
+    var span = document.getElementById("closeSimulation");
+    var spanTwo = document.getElementById("closeRivenCreate");
+	var spanThree = document.getElementById("closeWeaponCreate");
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    spanTwo.onclick = function() {
+      rivenMake.style.display = "none";
+    }
+	spanThree.onclick = function() {
+      weaponMakeModal.style.display = "none";
+    }
+	
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+      if (event.target == rivenMake) {
+        rivenMake.style.display = "none";
+      }
+	  if (event.target == weaponMakeModal) {
+        weaponMakeModal.style.display = "none";
+      }
+    }
+
+    var coll = document.getElementsByClassName("option-accordian");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    var overallAccuracySlider = document.getElementById("overallAccuracySlider");
+    var headshotAccuracySlider = document.getElementById("headshotAccuracySlider");
+    var targetLevelSlider = document.getElementById("targetLevelSlider");
+    var simulationNumberSlider = document.getElementById("simulationNumberSlider");
+    var overallAccuracyValue = document.getElementById("overallAccuracyValue");
+    var headshotAccuracyValue = document.getElementById("headshotAccuracyValue");
+    var targetLevelValue = document.getElementById("targetLevelValue");
+    var simulationNumberValue = document.getElementById("simulationNumberValue");
+    var overallAccuracry = .85;
+    var headshotAccuracy = .5;
+    var targetLevel = 30;
+    var simulations = 1000;
+
+
+    simulationNumberSlider.oninput = function() {
+      simulations = this.value;
+      simulationNumberValue.innerHTML = this.value;
+    }
+    overallAccuracySlider.oninput = function() {
+      overallAccuracry = this.value / 100;
+      overallAccuracyValue.innerHTML = this.value + "%";
+    }
+    headshotAccuracySlider.oninput = function() {
+      headshotAccuracy = this.value / 100;
+      headshotAccuracyValue.innerHTML = this.value + "%";
+    }
+    targetLevelSlider.oninput = function() {
+      targetLevel = this.value;
+      targetLevelValue.innerHTML = this.value;
+    }
+  </script>
+  <script defer src=autocomplete.js></script>
+  <script defer src=weaponsim.js></script>
+</footer>
+
+</html>

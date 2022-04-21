@@ -1,0 +1,465 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<style>
+				canvas {
+    border: 1px solid #000;
+	display : block;
+    margin : auto;
+}
+			</style>
+			<script src="/fabric.js"></script>
+		</head>
+		<body oncontextmenu="return false;">
+		<?php include_once("analyticstracking.php") ?>
+		<input id="reset-button" type="button" value="Reset" />
+<input id="rasterize-button" type="button" value="Save" />Dojo Planner rev.35 by Karbon Kitt
+<canvas id="c" width="800" height="800"></canvas>
+			<script defer="defer">
+var canvas = new fabric.Canvas('c', {
+	backgroundColor: 'rgb(230,230,230)',
+    selection: false
+});
+
+canvas.setWidth(window.innerWidth - 50);
+canvas.setHeight(window.innerHeight - 50);
+window.addEventListener('keydown', this.check, false);
+fabric.Object.prototype.setControlsVisibility({bl: false, br: false, tl: false, tr: false, mt:false, mb: false, ml:false, mr:false});
+fabric.Object.prototype.borderOpacityWhenMoving = 1;
+
+var text;
+var toolTip;
+var grid = 25;
+var slider;
+var panelWidth = 150;
+var oldTop;
+var energyT = 0;
+var capacityT = 0;
+var totalHeights;
+var sources = [
+	'Clan_Hall.png','Clan_Great_Hall.png','Clan_Greater_Hall.png','Clan_Grand_Hall.png','Clan_Grandest_Hall.png',
+	'Lab_Chem.png','Lab_Energy.png','Lab_Bio.png','Lab_Tenno.png','Lab_Orokin.png',
+	'Connector_Cross.png','Connector_Elbow.png','Connector_Straight_Hallway.png','Connector_Extended_Hallway.png','Connector_T.png','Elevator.png',
+    'Barracks.png','Oracle.png','Reactor.png','Dueling_Room.png','Obstacle_Course.png',
+	'Garden.png','Garden_Large.png','Temple_Of_Honor.png','Observatory.png','Label.png'
+	];
+var tooltips = [
+	'Clan Hall','Clan Great Hall','Clan Greater Hall','Clan Grand Hall','Clan Grandest Hall',
+	'Lab - Chem','Lab - Energy','Lab - Bio','Lab - Tenno','Lab - Orokin',
+    'Connector - Cross','Connector - Elbow','Connector - Straight Hallway','Connector - Extended Hallway','Connector - T','Elevator',
+	'Barracks','Oracle','Reactor','Dueling Room','Obstacle Course',
+    'Garden','Large Garden','Temple of Honor','Observatory','Editable Label'
+	];
+var origHeights = [
+	400,400,400,400,400,
+	200,200,200,100,300,
+	200,200,100,200,200,200,
+	200,200,200,200,1200,
+	200,400,400,1000,200
+];
+var origWidths = [
+	200,200,400,400,400,
+	200,200,200,200,200,
+	200,200,200,200,200,200,
+	200,200,200,200,1000,
+	200,400,400,600,400
+];
+var capacities = [
+	100,200,200,200,200,
+	-2,-2,-2,-2,-2,
+	-10,-1,-1,-2,-5,-2,
+	-1,-2,-5,-10,-10,
+	-10,-15,-2,-2,0
+];
+var energies = [
+	5,-2,-2,-2,-2,
+	-5,-5,-5,-5,-5,
+	-3,-1,-1,-2,-2,-2,
+	-1,-5,25,-10,-10,
+	-6,-8,-5,-5,0
+];
+
+var rstBtn = document.getElementById('reset-button');
+var rstzBtn = document.getElementById('rasterize-button');
+
+rstBtn.addEventListener('click', function () {
+    reset();
+});
+
+
+rstzBtn.addEventListener('click', function () {
+    rasterize();
+});
+canvas.on('mouse:over', function (options) {
+    if (options.target.hasOwnProperty('name')) {
+        toolTip.text = options.target.name;
+        toolTip.set({
+            left: panelWidth,
+            textAlign: 'left',
+            originX: 'left'
+        });
+        toolTip.setCoords();
+        canvas.renderAll();
+        toolTip.text = options.target.name;
+        toolTip.set({
+            left: panelWidth,
+            textAlign: 'left',
+            originX: 'left'
+        });
+        toolTip.setCoords();
+        canvas.renderAll();
+    }
+});
+canvas.on('object:moving', function (options) {
+    options.target.set({
+        left: Math.round(options.target.left / grid) * grid,
+        top: Math.round(options.target.top / grid) * grid,
+        template: false
+    });
+    options.target.setCoords();
+    if (options.target == slider) {
+        if (slider.top < 25) {
+            slider.setTop(25).setCoords();
+        }
+        if (slider.top > canvas.height - 100) {
+            slider.setTop(canvas.height - 100).setCoords();
+        }
+        slider.setCoords();
+        slide((oldTop - slider.top) * (totalHeights - canvas.height) / (canvas.height - 125));
+        oldTop = slider.top;
+        slider.setCoords();
+    } else {
+        options.target.setOpacity(
+		(
+        options.target.left < 125
+		|| options.target.top < -(options.target.getBoundingRectHeight() / 2)
+		|| options.target.top > canvas.height - (options.target.getBoundingRectHeight() / 2)
+		|| options.target.left + (options.target.getBoundingRectWidth() / 2) > canvas.width
+		|| options.target.intersectsWithRect(new fabric.Point(canvas.width - 40, canvas.height - 40), new fabric.Point(canvas.width, canvas.height))
+		) ? 0.3 : 1);
+        canvas.renderAll();
+    }
+});
+canvas.on('object:rotating', function (options) {
+    options.target.set({
+        angle: Math.round(options.target.angle / 90) * 90,
+    });
+    options.target.setCoords();
+});
+canvas.on('mouse:down', function (options) {
+    if (!options.target) return;
+    if (options.target.get('template')) {
+        copy();
+        paste();
+        options.target.set({
+            template: false
+        });
+		options.target.scale(.25);
+    }
+    if (options.target === slider) {
+        oldTop = slider.top;
+    }
+});
+
+canvas.on('mouse:up', function (options) {
+    if (!options.target) return;
+    if (options.target.hasOwnProperty('drains')) {
+        options.target.set('drains', true);
+    }
+    canvas.forEachObject(function (obj) {
+        if (obj.name === 'Editable Label' && !obj.template) {
+            canvas.add(new fabric.IText('Click to edit', {
+                fontFamily: 'calibri',
+                left: obj.left,
+                top: obj.top,
+                textAlign: 'left',
+                originX: 'left'
+            }));
+            canvas.remove(obj);
+        }
+        if (
+		(
+		obj.left < panelWidth
+		|| obj.top < -(obj.getBoundingRectHeight() / 2)
+		|| obj.top > canvas.height - (obj.getBoundingRectHeight() / 2)
+		|| obj.left + (obj.getBoundingRectWidth() / 2) > canvas.width
+		|| obj.intersectsWithRect(new fabric.Point(canvas.width - 40, canvas.height - 40), new fabric.Point(canvas.width, canvas.height))
+		)
+		&& obj.target != slider 
+		&& !obj.template 
+		&& !obj.hasOwnProperty('doesNotDelete')) {
+            canvas.remove(obj);
+        }
+    });
+    capacityT = 0;
+    energyT = 0;
+    canvas.forEachObject(function (obj) {
+        if (obj.drains) {
+            capacityT += obj.capacity;
+            energyT += obj.energy;
+        }
+    });
+    text.text = 'Capacity: ' + capacityT + ' Energy: ' + energyT;
+    text.set({
+        left: panelWidth,
+        textAlign: 'left',
+        originX: 'left'
+    });
+    text.setCoords();
+    canvas.renderAll();
+    text.text = 'Capacity: ' + capacityT + ' Energy: ' + energyT;
+    text.set({
+        left: panelWidth,
+        textAlign: 'left',
+        originX: 'left'
+    });
+    text.setCoords();
+    canvas.renderAll();
+    if (options.target.hasOwnProperty('movesSlider')) {
+        if (options.target.movesSlider > 0 && slider.top > 25) {
+            slide(25 * (totalHeights - canvas.height) / (canvas.height - 125));
+            slider.setTop(slider.top - 25).setCoords();
+        }
+        if (options.target.movesSlider < 0 && slider.top < canvas.height - 100) {
+            slide(-25 * (totalHeights - canvas.height) / (canvas.height - 125));
+            slider.setTop(slider.top + 25).setCoords();
+        }
+    }
+    canvas.renderAll();
+});
+
+function check(e) {
+    if (e.keyCode === 46 && canvas.getActiveObject()) {
+        canvas.remove(canvas.getActiveObject());
+        capacityT = 0;
+        energyT = 0;
+        canvas.forEachObject(function (obj) {
+            if (obj.drains) {
+                capacityT += obj.capacity;
+                energyT += obj.energy;
+            }
+        });
+        text.text = 'Capacity: ' + capacityT + ' Energy: ' + energyT;
+        text.set({
+            left: panelWidth,
+            textAlign: 'left',
+            originX: 'left'
+        });
+        text.setCoords();
+        canvas.renderAll();
+        text.text = 'Capacity: ' + capacityT + ' Energy: ' + energyT;
+        text.set({
+            left: panelWidth,
+            textAlign: 'left',
+            originX: 'left'
+        });
+        text.setCoords();
+        canvas.renderAll();
+    }
+}
+
+function copy() {
+    if (canvas.getActiveGroup()) {
+        for (var i in canvas.getActiveGroup().objects) {
+            var object = fabric.util.object.clone(canvas.getActiveGroup().objects[i]);
+            object.set("top", object.top);
+            object.set("left", object.left);
+            object.set("template", true);
+            copiedObjects[i] = object;
+        }
+    } else if (canvas.getActiveObject()) {
+        var object = fabric.util.object.clone(canvas.getActiveObject());
+        object.set("top", object.top);
+        object.set("left", object.left);
+        object.set("template", true);
+        copiedObject = object;
+        copiedObjects = new Array();
+    }
+
+}
+
+function paste() {
+    if (copiedObjects.length > 0) {
+        for (var i in copiedObjects) {
+            canvas.add(copiedObjects[i]);
+        }
+    } else if (copiedObject) {
+        canvas.add(copiedObject);
+    }
+    canvas.renderAll();
+}
+
+function slide(amount) {
+    canvas.forEachObject(function (obj) {
+        if (!obj.template) return;
+        obj.setTop(obj.top + amount).setCoords();
+    });
+    canvas.renderAll();
+}
+
+function rasterize() {
+    if (!fabric.Canvas.supports('toDataURL')) {
+        alert('This browser doesn\'t provide means to serialize canvas to an image');
+    } else {
+        canvas.deactivateAll();
+        canvas.forEachObject(function (obj) {
+            if (obj.isTrash || obj.template || obj === toolTip) {
+                obj.setOpacity(0);
+            }
+        });
+        window.open(canvas.toDataURL({format: 'png', left: panelWidth}));
+        canvas.forEachObject(function (obj) {
+            if (obj.isTrash || obj.template || obj === toolTip) {
+                obj.setOpacity(1);
+            }
+        });
+        canvas.renderAll();
+    }
+}
+
+function drawGrid() {
+    for (var i = 0; i < (canvas.width / grid); i++) {
+        canvas.add(new fabric.Line([i * grid + panelWidth, 0, i * grid + panelWidth, canvas.height], {
+            stroke: '#ccc',
+            selectable: false,
+            evented: false,
+			doesNotDelete: true,
+            isTrash: false
+        }));
+    }
+    for (var i = 0; i < (canvas.height / grid); i++) {
+        canvas.add(new fabric.Line([panelWidth, i * grid, canvas.width, i * grid], {
+            stroke: '#ccc',
+            selectable: false,
+            evented: false,
+			doesNotDelete: true,
+            isTrash: false
+        }));
+    }
+}
+
+function reset() {
+    canvas.deactivateAll();
+    rstBtn.disabled = true;
+    canvas.clear();
+    init();
+}
+
+function init() {
+    energyT = 0;
+    capacityT = 0;
+	var heights = 0;
+    drawGrid();
+    for (var i = 0; i < sources.length; i++) {
+        var settings = {
+            energy: energies[i],
+            capacity: capacities[i],
+            //top: templateTops[i],
+			top: heights,
+            name: tooltips[i],
+            crossOrigin: 'anonymous',
+            generalIndex: i,
+            selectable: false
+        };
+		
+        fabric.Image.fromURL('./images/' + sources[i], function (oImg) {
+           // oImg.scale(0.25);
+		   oImg.scaleToWidth(panelWidth - 25);
+            oImg.left = 25;
+            oImg.lockScalingX = true;
+            oImg.lockScalingY = true;
+            oImg.set('template', true);
+            oImg.set('isTrash', false);
+            oImg.set('drains', false);
+            canvas.add(oImg);
+        }, settings);
+		heights += ((panelWidth - 25) / origWidths[i]) * origHeights[i];
+    }
+	totalHeights = heights;
+    canvas.add(new fabric.Rect({
+        width: 25,
+        height: 25,
+        left: 0,
+        top: 0,
+        selectable: false,
+        hasControls: false,
+        fill: '#000',
+        doesNotDelete: true,
+        movesSlider: 1
+    }));
+    canvas.add(new fabric.Rect({
+        width: 25,
+        height: 25,
+        left: 0,
+        top: canvas.height - 25,
+        selectable: false,
+        hasControls: false,
+        fill: '#000',
+        doesNotDelete: true,
+        movesSlider: -1
+    }));
+    slider = new fabric.Rect({
+        width: 25,
+        height: 75,
+        left: 0,
+        top: 25,
+        hasControls: false,
+        fill: '#aaa',
+        doesNotDelete: true,
+        lockMovementX: true
+    });
+    slider.selectable = false;
+    canvas.add(slider);
+    oldTop = slider.getTop();
+    text = new fabric.Text('Capacity: ' + capacityT + ' Energy: ' + energyT, {
+        left: panelWidth,
+        top: canvas.height - 55,
+        selectable: false,
+        doesNotDelete: true,
+        textAlign: 'left',
+        fontFamily: 'calibri',
+        evented: false,
+        originX: 'left'
+    });
+    toolTip = new fabric.Text(' ', {
+        left: 0,
+        top: 0,
+        selectable: false,
+        doesNotDelete: true,
+        textAlign: 'left',
+        fontFamily: 'calibri',
+        evented: false,
+        originX: 'left'
+    });
+    canvas.add(text);
+    canvas.add(toolTip);
+    var settingsTwo = {
+        crossOrigin: 'anonymous',
+        doesNotDelete: true
+    };
+    fabric.Image.fromURL('./images/recycle.png', function (oImg) {
+        oImg.scale(0.5);
+        oImg.selectable = false;
+        oImg.set('isTrash', true);
+        oImg.top = canvas.height - 50;
+        oImg.left = canvas.width - 50;
+        oImg.evented = false;
+        canvas.add(oImg);
+        rstBtn.disabled = false;
+        slider.selectable = true;
+        canvas.forEachObject(function (obj) {
+            if (obj.template && obj.name) {
+				if(obj.name != ' ') {
+					obj.selectable = true;
+				}
+            }
+        });
+    }, settingsTwo);
+    canvas.renderAll();
+}
+rstBtn.disabled = true;
+init();
+slide(0);
+			</script>
+		</body>
+	</html>

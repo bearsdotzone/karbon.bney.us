@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: gray;
+    }
+
+    .modslot {
+      width: 128px;
+      height: 186px;
+      margin: auto;
+      background-size: 128px 186px;
+      display: inline-block;
+    }
+
+    .mod {
+      width: 256px;
+      height: 371px;
+      transform: scale(.5);
+      transition: 0.125s ease-in-out;
+      position: relative;
+      transform-origin: top left;
+    }
+
+    .mod:hover,
+    .mod:focus {
+      transform: scale(1);
+      transform: translate(-64px, -93px);
+      z-index: 1;
+    }
+
+    .modBorder {
+      position: absolute;
+    }
+
+    .modThumbnail {
+      position: absolute;
+      z-index: -1;
+      clip-path: polygon(6px 5px, 250px 5px, 250px 250px, 6px 250px);
+    }
+
+    .gridBG {
+      position: absolute;
+      z-index: -2;
+      margin-top: -80px;
+    }
+
+    .ranks {
+      margin-top: 344px;
+      position: absolute;
+      width: 256px;
+      height: 32px;
+      text-align: center;
+    }
+
+    .activeRankStar,
+    .inactiveRankStar {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      margin: 0px -10px 0px -10px;
+    }
+
+    .data {
+      font-family: "Tahoma";
+      width: 256px;
+      text-align: center;
+      height: 371px;
+      position: absolute;
+    }
+
+    .common {
+      color: #ce9e8c;
+    }
+
+    .uncommon {
+      color: #e7e3e7;
+    }
+
+    .rare {
+      color: #f7e3b5;
+    }
+
+    .legendary {
+      color: #f7f3f7;
+    }
+
+    .omega {
+      color: #ad9ace;
+    }
+
+    .modPolarityCost {
+      margin-top: 21px;
+      position: absolute;
+      right: 24px;
+      font-weight: bold;
+    }
+
+    .modPolarity {
+      margin-top: 23px;
+      position: absolute;
+      right: 8px;
+      font-weight: bold;
+    }
+
+    .common .modPolarity {
+      -webkit-filter: url(#colorizeCommon);
+      filter: url(#colorizeCommon);
+    }
+
+    .uncommon .modPolarity {
+      -webkit-filter: url(#colorizeUncommon);
+      filter: url(#colorizeUncommon);
+    }
+
+    .rare .modPolarity {
+      -webkit-filter: url(#colorizeRare);
+      filter: url(#colorizeRare);
+    }
+
+    .legendary .modPolarity {
+      -webkit-filter: url(#colorizeLegendary);
+      filter: url(#colorizeLegendary);
+    }
+
+    .omega .modPolarity {
+      -webkit-filter: url(#colorizeOmega);
+      filter: url(#colorizeOmega);
+    }
+
+    .deets {
+      position: absolute;
+      width: 180px;
+      bottom: 70px;
+      margin-left: 38px;
+    }
+
+    .modName {
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .modType {
+      margin-top: 309px;
+      font-weight: bold;
+    }
+
+    #filterElement {
+      display: none;
+    }
+    
+    #activeMods{
+      width: 656px;
+      margin: 93px auto;
+    }
+  </style>
+</head>
+
+<body><svg class="defs-only" id="filterElement"><filter id="colorizeCommon" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.8046875
+ 0 0 0 0 0.6171875 0 0 0 0 0.546875 0 0 0 1 0" />
+ </filter></svg><svg class="defs-only" id="filterElement"><filter id="colorizeUncommon" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.90234375
+ 0 0 0 0 0.88671875 0 0 0 0 0.90234375 0 0 0 1 0" />
+ </filter></svg><svg class="defs-only" id="filterElement"><filter id="colorizeRare" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.96484375
+ 0 0 0 0 0.88671875 0 0 0 0 0.70703125 0 0 0 1 0" />
+ </filter></svg><svg class="defs-only" id="filterElement"><filter id="colorizeLegendary" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.96484375
+ 0 0 0 0 0.94921875 0 0 0 0 0.96484375 0 0 0 1 0" />
+ </filter></svg><svg class="defs-only" id="filterElement"><filter id="colorizeOmega" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.67578125
+ 0 0 0 0 0.6015625 0 0 0 0 0.8046875 0 0 0 1 0" />
+ </filter></svg>
+  <div id="activeMods">
+  <div class="modslot">
+    <div class="mod"><img class="modBorder" src="https://vignette.wikia.nocookie.net/warframe/images/3/3b/CommonModBorder.png/revision/latest" width="256" height="371"><img class="modThumbnail" src="http://content.warframe.com/MobileExport/Lotus/Interface/Cards/Images/Pistol/WeaponProcTimePistolMod.jpeg"
+        width="256" height="256"><img class="gridBG" src="https://vignette.wikia.nocookie.net/warframe/images/7/71/Mod_Common_Background.png/revision/latest" width="256" height="512">
+      <div class="ranks"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest"
+          width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest"
+          width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"></div>
+      <div class="data common">
+        <div class="modPolarityCost">11</div><img class="modPolarity" src="https://vignette.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest" width="16" height="16">
+        <div class="deets">
+          <div class="modName">Perpetual Agony</div>
+          <div class="modEffect">+30% Status Duration</div>
+        </div>
+        <div class="modType">PISTOL</div>
+      </div>
+    </div>
+  </div>
+  <div class="modslot">
+    <div class="mod"><img class="modBorder" src="https://vignette.wikia.nocookie.net/warframe/images/4/4e/Mod_Border_Uncommon.png/revision/latest" width="256" height="371"><img class="modThumbnail" src="http://content.warframe.com/MobileExport/Lotus/Interface/Cards/Images/Rifle/PoisonDamageRifleMod.jpeg"
+        width="256" height="256"><img class="gridBG" src="https://vignette.wikia.nocookie.net/warframe/images/6/69/Mod_Uncommon_Background.png/revision/latest" width="256" height="512">
+      <div class="ranks"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest"
+          width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest"
+          width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"></div>
+      <div class="data uncommon">
+        <div class="modPolarityCost">11</div><img class="modPolarity" src="https://vignette.wikia.nocookie.net/warframe/images/6/60/Naramon_Pol.svg/revision/latest" width="16" height="16">
+        <div class="deets">
+          <div class="modName">Infected Clip</div>
+          <div class="modEffect">+90% &#9760; Toxin
+          </div>
+        </div>
+        <div class="modType">RIFLE</div>
+      </div>
+    </div>
+  </div>
+  <div class="modslot">
+    <div class="mod"><img class="modBorder" src="https://vignette.wikia.nocookie.net/warframe/images/5/55/Mod_Border_Rare.png/revision/latest" width="256" height="371"><img class="modThumbnail" style="clip-path: polygon(6px 5px, 250px 5px, 250px 230px, 6px 230px);"
+        src="http://content.warframe.com/MobileExport/Lotus/Interface/Cards/Images/Shotgun/IceEventShotgunMod.jpeg" width="256" height="256"><img class="gridBG" src="https://vignette.wikia.nocookie.net/warframe/images/d/d0/Mod_Rare_Background.png/revision/latest"
+        width="256" height="512">
+      <div class="ranks"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest"
+          width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"></div>
+      <div class="data rare">
+        <div class="modPolarityCost">7</div><img class="modPolarity" src="https://vignette.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest" width="16" height="16">
+        <div class="deets">
+          <div class="modName">Frigid Blast</div>
+          <div class="modEffect">+60% &#10052; Cold+60% Status Chance</div>
+        </div>
+        <div class="modType">SHOTGUN</div>
+      </div>
+    </div>
+  </div>
+  <div class="modslot">
+    <div class="mod"><img class="modBorder" src="https://vignette.wikia.nocookie.net/warframe/images/d/da/Mod_Border_Legendary.png/revision/latest" width="256" height="371"><img class="modThumbnail" style="clip-path: polygon(6px 5px, 250px 5px, 250px 230px, 6px 230px);"
+        src="http://content.warframe.com/MobileExport/Lotus/Interface/Cards/Images/Rifle/RifleFreezeDamageMod.jpeg" width="256" height="256"><img class="gridBG" src="https://vignette.wikia.nocookie.net/warframe/images/a/ac/Tex_0882.png/revision/latest"
+        width="256" height="512">
+      <div class="ranks"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest"
+          width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest"
+          width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest"
+          width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest"
+          width="32" height="32"><img class="inactiveRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/2/23/Mod_Rank_Star_Inactive.png/revision/latest" width="32" height="32"><img class="inactiveRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/2/23/Mod_Rank_Star_Inactive.png/revision/latest"
+          width="32" height="32"></div>
+      <div class="data legendary">
+        <div class="modPolarityCost">14</div><img class="modPolarity" src="https://vignette.wikia.nocookie.net/warframe/images/6/6f/Vazarin_Pol.svg/revision/latest" width="16" height="16">
+        <div class="deets">
+          <div class="modName">Primed Cryo Rounds</div>
+          <div class="modEffect">+135% &#10052; Cold
+          </div>
+        </div>
+        <div class="modType">RIFLE</div>
+      </div>
+    </div>
+  </div>
+  <div class="modslot">
+    <div class="mod"><img class="modBorder" src="https://vignette.wikia.nocookie.net/warframe/images/5/5b/Mod_Border_Omega.png/revision/latest" width="256" height="371"><img class="modThumbnail" style="clip-path: polygon(6px 5px, 250px 5px, 250px 210px, 6px 210px);"
+        src="http://content.warframe.com/MobileExport/Lotus/Interface/Cards//Images/Pistol/PistolDamageAmountMod.jpeg" width="256" height="256"><img class="gridBG" src="https://vignette.wikia.nocookie.net/warframe/images/d/d5/Mod_Omega_Background.png/revision/latest"
+        width="256" height="512">
+      <div class="ranks"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest"
+          width="32" height="32"><img class="activeRankStar" src="https://vignette.wikia.nocookie.net/warframe/images/6/6d/Mod_Rank_Star_Active.png/revision/latest" width="32" height="32"></div>
+      <div class="data omega">
+        <div class="modPolarityCost">7</div><img class="modPolarity" src="https://vignette.wikia.nocookie.net/warframe/images/b/b2/Madurai_Pol.svg/revision/latest" width="16" height="16">
+        <div class="deets">
+          <div class="modName">Dual Cestra Visitio</div>
+          <div class="modEffect">+319.9% Damage +114.5% ⚡Electricity</div>
+        </div>
+        <div class="modType">MR 13</div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

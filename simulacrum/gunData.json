@@ -1,0 +1,1485 @@
+gunData = {
+  "Argonak": {
+    "GunName": "Argonak",
+    "Class": "Rifle",
+    "FireModes": [{
+        "AttackName": "Full-Auto",
+        "Bullets": 1,
+        "FireRate": 6,
+        "CritChance": .09,
+        "CritMultiplier": 1.5,
+        "StatusChance": .27,
+        "Accuracy": 28.6,
+        "TriggerType": "Auto",
+        "DamageTable": [24.5, 6.3, 26.2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      },
+      {
+        "AttackName": "Semi-Auto",
+        "Bullets": 1,
+        "FireRate": 4.33,
+        "CritChance": .27,
+        "CritMultiplier": 2.3,
+        "StatusChance": .19,
+        "Accuracy": 28.6,
+        "TriggerType": "Semi-Auto",
+        "DamageTable": [24.5, 6.3, 26.2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      }
+    ],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 43,
+    "AmmoMax": 473,
+    "ReloadTime": 2.4
+  },
+  "Baza": {
+    "GunName": "Baza",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 16.67,
+      "CritChance": .26,
+      "CritMultiplier": 3.0,
+      "StatusChance": .10,
+      "Accuracy": 80,
+      "TriggerType": "Auto",
+      "DamageTable": [5.8, 6.7, 3.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "DamageFalloff": {
+        "Start": 22,
+        "Stop": 34,
+        "MaxPenalty": .5
+      }
+    }],
+    "NoiseLevel": "Silent",
+    "MagazineSize": 40,
+    "AmmoMax": 800,
+    "ReloadTime": 1.4
+  },
+  "Boltor": {
+    "GunName": "Boltor",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 8.75,
+      "CritChance": .10,
+      "CritMultiplier": 1.8,
+      "StatusChance": .14,
+      "Accuracy": 25,
+      "TriggerType": "Auto",
+      "DamageTable": [2.5, 20.0, 2.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 60,
+    "AmmoMax": 540,
+    "ReloadTime": 2.6
+  },
+  "Boltor Prime": {
+    "GunName": "Boltor Prime",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 10,
+      "CritChance": .12,
+      "CritMultiplier": 2.0,
+      "StatusChance": .34,
+      "Accuracy": 50,
+      "TriggerType": "Auto",
+      "DamageTable": [4.6, 41.4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 60,
+    "AmmoMax": 540,
+    "ReloadTime": 2.4
+  },
+  "Telos Boltor": {
+    "GunName": "Telos Boltor",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 9.33,
+      "CritChance": .30,
+      "CritMultiplier": 2.4,
+      "StatusChance": .16,
+      "Accuracy": 25,
+      "TriggerType": "Auto",
+      "DamageTable": [3.0, 27.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 90,
+    "AmmoMax": 540,
+    "ReloadTime": 2.4
+  },
+  "Braton": {
+    "GunName": "Braton",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 8.75,
+      "CritChance": .12,
+      "CritMultiplier": 1.6,
+      "StatusChance": .06,
+      "Accuracy": 28.6,
+      "TriggerType": "Auto",
+      "DamageTable": [7.9, 7.9, 8.2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 45,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "MK1-Braton": {
+    "GunName": "MK1-Braton",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 7.5,
+      "CritChance": .08,
+      "CritMultiplier": 1.5,
+      "StatusChance": .05,
+      "Accuracy": 40,
+      "TriggerType": "Auto",
+      "DamageTable": [4.5, 4.5, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 60,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Braton Prime": {
+    "GunName": "Braton Prime",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 9.58,
+      "CritChance": .12,
+      "CritMultiplier": 2.0,
+      "StatusChance": .26,
+      "Accuracy": 28.6,
+      "TriggerType": "Auto",
+      "DamageTable": [1.75, 12.25, 21.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 75,
+    "AmmoMax": 600,
+    "ReloadTime": 2.15
+  },
+  "Braton Vandal": {
+    "GunName": "Braton Vandal",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 7.5,
+      "CritChance": .16,
+      "CritMultiplier": 2.0,
+      "StatusChance": .16,
+      "Accuracy": 33.3,
+      "TriggerType": "Auto",
+      "DamageTable": [12.25, 1.75, 21.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 50,
+    "AmmoMax": 550,
+    "ReloadTime": 1.75
+  },
+  "Burston": {
+    "GunName": "Burston",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Burst Fire",
+      "Bullets": 1,
+      "FireRate": 7.83,
+      "BurstCount": 3,
+      "CritChance": .06,
+      "CritMultiplier": 1.6,
+      "StatusChance": .18,
+      "Accuracy": 25,
+      "TriggerType": "Burst",
+      "DamageTable": [10.0, 10.0, 10.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 45,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Burston Prime": {
+    "GunName": "Burston Prime",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Burst Fire",
+      "Bullets": 1,
+      "FireRate": 13.64,
+      "BurstCount": 3,
+      "CritChance": .18,
+      "CritMultiplier": 1.8,
+      "StatusChance": .30,
+      "Accuracy": 25,
+      "TriggerType": "Burst",
+      "DamageTable": [10.8, 10.8, 14.4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 45,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Buzlok": {
+    "GunName": "Buzlok",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 6.25,
+      "CritChance": .23,
+      "CritMultiplier": 2.5,
+      "StatusChance": .21,
+      "Accuracy": 13.3,
+      "TriggerType": "Auto",
+      "DamageTable": [30.0, 24.0, 6.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 60,
+    "AmmoMax": 540,
+    "ReloadTime": 3.0
+  },
+  "Cyngas": {
+    "GunName": "Cyngas",
+    "Class": "ArchGun",
+    "FireModes": [{
+      "AttackName": "Burst Fire",
+      "Bullets": 1,
+      "FireRate": 9.09,
+	  "BurstCount": 3,
+      "CritChance": .05,
+      "CritMultiplier": 2.0,
+      "StatusChance": .3,
+      "Accuracy": 25,
+      "TriggerType": "Burst",
+      "DamageTable": [15.8, 15.8, 16.3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 30,
+    "AmmoMax": 90,
+    "ReloadTime": 0.6
+  },
+  "Dera": {
+    "GunName": "Dera",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 11.25,
+      "CritChance": .08,
+      "CritMultiplier": 1.6,
+      "StatusChance": .22,
+      "Accuracy": 100,
+      "TriggerType": "Auto",
+      "DamageTable": [6.0, 23.5, 1.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 45,
+    "AmmoMax": 540,
+    "ReloadTime": 1.8
+  },
+  "Dera Vandal": {
+    "GunName": "Dera Vandal",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 11.25,
+      "CritChance": .08,
+      "CritMultiplier": 2.0,
+      "StatusChance": .30,
+      "Accuracy": 100,
+      "TriggerType": "Auto",
+      "DamageTable": [6.4, 24.0, 1.6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 60,
+    "AmmoMax": 540,
+    "ReloadTime": 1.8
+  },
+  "Gorgon": {
+    "GunName": "Gorgon",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Spool",
+      "Bullets": 1,
+      "FireRate": 12.5,
+      "CritChance": .17,
+      "CritMultiplier": 1.5,
+      "StatusChance": .09,
+      "Accuracy": 12.5,
+      "TriggerType": "Auto-Spool",
+      "DamageTable": [18.75, 3.75, 2.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 90,
+    "AmmoMax": 540,
+    "ReloadTime": 4.2
+  },
+  "Prisma Gorgon": {
+    "GunName": "Prisma Gorgon",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Spool",
+      "Bullets": 1,
+      "FireRate": 14.17,
+      "CritChance": .30,
+      "CritMultiplier": 2.3,
+      "StatusChance": .15,
+      "Accuracy": 20,
+      "TriggerType": "Auto-Spool",
+      "DamageTable": [17.3, 3.5, 2.3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 120,
+    "AmmoMax": 840,
+    "ReloadTime": 3.0
+  },
+  "Gorgon Wraith": {
+    "GunName": "Gorgon Wraith",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Spool",
+      "Bullets": 1,
+      "FireRate": 13.3,
+      "CritChance": .15,
+      "CritMultiplier": 1.9,
+      "StatusChance": .21,
+      "Accuracy": 16.7,
+      "TriggerType": "Auto-Spool",
+      "DamageTable": [23.0, 2.7, 1.3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 90,
+    "AmmoMax": 900,
+    "ReloadTime": 3.0
+  },
+  "Grakata": {
+    "GunName": "Grakata",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 20.0,
+      "CritChance": .25,
+      "CritMultiplier": 2.0,
+      "StatusChance": .20,
+      "Accuracy": 28.6,
+      "TriggerType": "Auto",
+      "DamageTable": [4.4, 3.7, 2.9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 60,
+    "AmmoMax": 750,
+    "ReloadTime": 2.4
+  },
+  "Prisma Grakata": {
+    "GunName": "Prisma Grakata",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 21.67,
+      "CritChance": .25,
+      "CritMultiplier": 2.5,
+      "StatusChance": .21,
+      "Accuracy": 28.6,
+      "TriggerType": "Auto",
+      "DamageTable": [6.0, 5.0, 4.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 120,
+    "AmmoMax": 1000,
+    "ReloadTime": 2.0
+  },
+  "Grinlok": {
+    "GunName": "Grinlok",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Semi-Auto",
+      "Bullets": 1,
+      "FireRate": 1.67,
+      "CritChance": .15,
+      "CritMultiplier": 2.5,
+      "StatusChance": .35,
+      "Accuracy": 44.4,
+      "TriggerType": "Semi-Auto",
+      "DamageTable": [93.5, 18.7, 74.8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 9,
+    "AmmoMax": 540,
+    "ReloadTime": 1.7
+  },
+  "Harpak": {
+    "GunName": "Harpak",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Burst Fire",
+      "Bullets": 1,
+      "FireRate": 6,
+      "BurstCount": 3,
+      "CritChance": .20,
+      "CritMultiplier": 2.3,
+      "StatusChance": .17,
+      "Accuracy": 18.2,
+      "TriggerType": "Burst",
+      "DamageTable": [5.0, 37.5, 7.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 45,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Hema": {
+    "GunName": "Hema",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Burst Fire",
+      "Bullets": 1,
+      "FireRate": 6,
+      "BurstCount": 3,
+      "CritChance": .11,
+      "CritMultiplier": 2.0,
+      "StatusChance": .25,
+      "Accuracy": 20,
+      "TriggerType": "Burst",
+      "DamageTable": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 47]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 60,
+    "AmmoMax": 60,
+    "ReloadTime": 2.0
+  },
+  "Hind": {
+    "GunName": "Hind",
+    "Class": "Rifle",
+    "FireModes": [{
+        "AttackName": "Burst Fire",
+        "Bullets": 1,
+        "FireRate": 6.25,
+        "BurstCount": 5,
+        "CritChance": .07,
+        "CritMultiplier": 1.5,
+        "StatusChance": .15,
+        "Accuracy": 33.3,
+        "TriggerType": "Burst",
+        "DamageTable": [7.5, 7.5, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      },
+      {
+        "AttackName": "Semi-Auto",
+        "Bullets": 1,
+        "FireRate": 2.5,
+        "CritChance": .15,
+        "CritMultiplier": 2.0,
+        "StatusChance": .10,
+        "Accuracy": 28.6,
+        "TriggerType": "Semi-Auto",
+        "DamageTable": [12, 12, 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      }
+    ],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 65,
+    "AmmoMax": 60,
+    "ReloadTime": 2.0
+  },
+    "Imperator Vandal": {
+    "GunName": "Imperator Vandal",
+    "Class": "ArchGun",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 25,
+      "CritChance": .15,
+      "CritMultiplier": 2.0,
+      "StatusChance": .1,
+      "Accuracy": 25,
+      "TriggerType": "Auto",
+      "DamageTable": [8.8, 7.7, 5.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 300,
+    "AmmoMax": 900,
+    "ReloadTime": 4
+  },
+  "Karak": {
+    "GunName": "Karak",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 11.67,
+      "CritChance": .09,
+      "CritMultiplier": 1.5,
+      "StatusChance": .15,
+      "Accuracy": 28.6,
+      "TriggerType": "Auto",
+      "DamageTable": [13, 8.7, 7.3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 30,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Karak Wraith": {
+    "GunName": "Karak Wraith",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 11.67,
+      "CritChance": .13,
+      "CritMultiplier": 2.0,
+      "StatusChance": .25,
+      "Accuracy": 28.6,
+      "TriggerType": "Auto",
+      "DamageTable": [14.1, 9.3, 7.8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 60,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Latron": {
+    "GunName": "Latron",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Semi-Auto",
+      "Bullets": 1,
+      "FireRate": 4.17,
+      "CritChance": .12,
+      "CritMultiplier": 2.0,
+      "StatusChance": .12,
+      "Accuracy": 28.6,
+      "TriggerType": "Semi-Auto",
+      "DamageTable": [8.25, 38.5, 8.25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 15,
+    "AmmoMax": 540,
+    "ReloadTime": 2.4
+  },
+  "Latron Prime": {
+    "GunName": "Latron Prime",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Semi-Auto",
+      "Bullets": 1,
+      "FireRate": 4.17,
+      "CritChance": .22,
+      "CritMultiplier": 2.8,
+      "StatusChance": .26,
+      "Accuracy": 28.6,
+      "TriggerType": "Semi-Auto",
+      "DamageTable": [9, 72, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 15,
+    "AmmoMax": 540,
+    "ReloadTime": 2.4
+  },
+  "Latron Wraith": {
+    "GunName": "Latron Wraith",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Semi-Auto",
+      "Bullets": 1,
+      "FireRate": 5.42,
+      "CritChance": .26,
+      "CritMultiplier": 2.8,
+      "StatusChance": .14,
+      "Accuracy": 28.6,
+      "TriggerType": "Semi-Auto",
+      "DamageTable": [15, 42, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 15,
+    "AmmoMax": 540,
+    "ReloadTime": 2.4
+  },
+  "Mutalist Quanta": {
+    "GunName": "Mutalist Quanta",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 10,
+      "CritChance": .025,
+      "CritMultiplier": 1.5,
+      "StatusChance": .15,
+      "Accuracy": 100,
+      "TriggerType": "Auto",
+      "DamageTable": [2.5, 15, 7.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 60,
+    "AmmoMax": 540,
+    "ReloadTime": 3.0
+  },
+  "Opticor": {
+    "GunName": "Opticor",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Charged Shot",
+      "Bullets": 1,
+      "FireRate": 1,
+      "ChargeTime": 2.0,
+      "CritChance": .2,
+      "CritMultiplier": 2.5,
+      "StatusChance": .20,
+      "Accuracy": 100,
+      "TriggerType": "Charge",
+      "DamageTable": [100, 850, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "AdditionalEffect": {
+        "AttackName": "Area Explosion",
+        "EffectType": "ADD",
+        "DamageTable": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 400, 0, 0],
+        "MaxRange": 5
+      }
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 15,
+    "AmmoMax": 540,
+    "ReloadTime": 2.4
+  },
+  "Paracyst": {
+    "GunName": "Paracyst",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Burst Fire",
+      "Bullets": 1,
+      "FireRate": 11.11,
+      "BurstCount": 3,
+      "CritChance": .10,
+      "CritMultiplier": 2.0,
+      "StatusChance": .30,
+      "Accuracy": 50,
+      "TriggerType": "Burst",
+      "DamageTable": [0, 0, 0, 0, 0, 0, 33, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 60,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+    "Phaedra": {
+    "GunName": "Phaedra",
+    "Class": "ArchGun",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 18.75,
+      "CritChance": .1,
+      "CritMultiplier": 2.0,
+      "StatusChance": .25,
+      "Accuracy": 10.5,
+      "TriggerType": "Auto",
+      "DamageTable": [8.8, 22.8, 3.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 250,
+    "AmmoMax": 750,
+    "ReloadTime": 5
+  },  
+  "Quartakk": {
+    "GunName": "Quartakk",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Burst Fire",
+      "Bullets": 1,
+      "FireRate": 6.33,
+      "BurstCount": 4,
+      "CritChance": .19,
+      "CritMultiplier": 2.3,
+      "StatusChance": .27,
+      "Accuracy": 90.9,
+      "TriggerType": "Burst",
+      "DamageTable": [18.1, 14.2, 16.7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 84,
+    "AmmoMax": 840,
+    "ReloadTime": 1.9
+  },
+  "Rubico Prime": {
+    "GunName": "Rubico Prime",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Semi-Auto",
+      "Bullets": 1,
+      "FireRate": 3.67,
+      "CritChance": .38,
+      "CritMultiplier": 3.0,
+      "StatusChance": .16,
+      "Accuracy": 13.3,
+      "TriggerType": "Auto-Spool",
+      "DamageTable": [149.6, 28.1, 9.3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 5,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Soma": {
+    "GunName": "Soma",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Spool",
+      "Bullets": 1,
+      "FireRate": 15.0,
+      "CritChance": .3,
+      "CritMultiplier": 3.0,
+      "StatusChance": .07,
+      "Accuracy": 28.6,
+      "TriggerType": "Auto-Spool",
+      "DamageTable": [1.2, 4.8, 6.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 100,
+    "AmmoMax": 540,
+    "ReloadTime": 3.0
+  },
+  "Soma Prime": {
+    "GunName": "Soma Prime",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Spool",
+      "Bullets": 1,
+      "FireRate": 15.0,
+      "CritChance": .3,
+      "CritMultiplier": 3.0,
+      "StatusChance": .1,
+      "Accuracy": 28.6,
+      "TriggerType": "Auto-Spool",
+      "DamageTable": [1.2, 4.8, 6.0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 200,
+    "AmmoMax": 800,
+    "ReloadTime": 3.0
+  },
+  "Stradavar": {
+    "GunName": "Stradavar",
+    "Class": "Rifle",
+    "FireModes": [{
+        "AttackName": "Full-Auto",
+        "Bullets": 1,
+        "FireRate": 10,
+        "CritChance": .24,
+        "CritMultiplier": 2.0,
+        "StatusChance": .12,
+        "Accuracy": 14.3,
+        "TriggerType": "Auto",
+        "DamageTable": [9.8, 9.8, 8.4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      },
+      {
+        "AttackName": "Semi-Auto",
+        "Bullets": 1,
+        "FireRate": 5,
+        "CritChance": .28,
+        "CritMultiplier": 2.3,
+        "StatusChance": .16,
+        "Accuracy": 28.6,
+        "TriggerType": "Semi-Auto",
+        "DamageTable": [7.5, 30, 12.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      }
+    ],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 65,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Supra": {
+    "GunName": "Supra",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Spool",
+      "Bullets": 1,
+      "FireRate": 12.5,
+      "CritChance": .12,
+      "CritMultiplier": 1.8,
+      "StatusChance": .3,
+      "Accuracy": 14.3,
+      "TriggerType": "Auto-Spool",
+      "DamageTable": [4, 30, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 180,
+    "AmmoMax": 1080,
+    "ReloadTime": 3.0
+  },
+  "Supra Vandal": {
+    "GunName": "Supra Vandal",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Spool",
+      "Bullets": 1,
+      "FireRate": 12.5,
+      "CritChance": .16,
+      "CritMultiplier": 2.0,
+      "StatusChance": .3,
+      "Accuracy": 26.6,
+      "TriggerType": "Auto-Spool",
+      "DamageTable": [4, 30, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 300,
+    "AmmoMax": 1600,
+    "ReloadTime": 3.0
+  },
+  "Sybaris": {
+    "GunName": "Sybaris",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Burst Fire",
+      "Bullets": 1,
+      "FireRate": 3.98,
+      "BurstCount": 2,
+      "CritChance": .25,
+      "CritMultiplier": 2.0,
+      "StatusChance": .1,
+      "Accuracy": 28.6,
+      "TriggerType": "Burst",
+      "DamageTable": [26.4, 26.4, 27.2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 10,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Dex Sybaris": {
+    "GunName": "Dex Sybaris",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Burst Fire",
+      "Bullets": 1,
+      "FireRate": 4.17,
+      "BurstCount": 2,
+      "CritChance": .35,
+      "CritMultiplier": 2.0,
+      "StatusChance": .1,
+      "Accuracy": 28.6,
+      "TriggerType": "Burst",
+      "DamageTable": [22.5, 18.75, 33.75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 14,
+    "AmmoMax": 540,
+    "ReloadTime": 1.5
+  },
+  "Sybaris Prime": {
+    "GunName": "Sybaris Prime",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Burst Fire",
+      "Bullets": 1,
+      "FireRate": 4.72,
+      "BurstCount": 2,
+      "CritChance": .3,
+      "CritMultiplier": 2.0,
+      "StatusChance": .25,
+      "Accuracy": 28.6,
+      "TriggerType": "Burst",
+      "DamageTable": [29, 29, 29.9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 20,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Tenora": {
+    "GunName": "Tenora",
+    "Class": "Rifle",
+    "FireModes": [{
+        "AttackName": "Full-Spool",
+        "Bullets": 1,
+        "FireRate": 11.67,
+        "CritChance": .28,
+        "CritMultiplier": 2.0,
+        "StatusChance": .16,
+        "Accuracy": 12.5,
+        "TriggerType": "Auto-Spool",
+        "DamageTable": [7.2, 9.6, 7.2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      },
+      {
+        "AttackName": "Charged Shot",
+        "Bullets": 1,
+        "FireRate": 10,
+        "ChargeTime": 0.8,
+        "CritChance": .34,
+        "CritMultiplier": 3.0,
+        "StatusChance": .11,
+        "AmmoConsumed": 10,
+        "Accuracy": 12.5,
+        "TriggerType": "Charge",
+        "DamageTable": [48, 144, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      }
+    ],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 150,
+    "AmmoMax": 900,
+    "ReloadTime": 2.5
+  },
+  "Tetra": {
+    "GunName": "Tetra",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 6.67,
+      "CritChance": .04,
+      "CritMultiplier": 1.5,
+      "StatusChance": .20,
+      "Accuracy": 18.2,
+      "TriggerType": "Auto",
+      "DamageTable": [6.4, 25.6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 60,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Prisma Tetra": {
+    "GunName": "Prisma Tetra",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 7.08,
+      "CritChance": .1,
+      "CritMultiplier": 2.0,
+      "StatusChance": .24,
+      "Accuracy": 18.2,
+      "TriggerType": "Auto",
+      "DamageTable": [7.6, 30.4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 60,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Tiberon": {
+    "GunName": "Tiberon",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Burst Fire",
+      "Bullets": 1,
+      "FireRate": 9.09,
+      "BurstCount": 3,
+      "CritChance": .26,
+      "CritMultiplier": 2.4,
+      "StatusChance": .16,
+      "Accuracy": 33.3,
+      "TriggerType": "Burst",
+      "DamageTable": [11.0, 22.0, 11.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 30,
+    "AmmoMax": 540,
+    "ReloadTime": 2.3
+  },
+  "Tiberon Prime": {
+    "GunName": "Tiberon Prime",
+    "Class": "Rifle",
+    "FireModes": [{
+        "AttackName": "Burst Fire",
+        "Bullets": 1,
+        "FireRate": 7.38,
+        "BurstCount": 3,
+        "CritChance": .28,
+        "CritMultiplier": 3.0,
+        "StatusChance": .2,
+        "Accuracy": 33.3,
+        "TriggerType": "Burst",
+        "DamageTable": [13.8, 18.4, 13.8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      },
+      {
+        "AttackName": "Semi-Auto",
+        "Bullets": 1,
+        "FireRate": 6,
+        "CritChance": .3,
+        "CritMultiplier": 3.4,
+        "StatusChance": .18,
+        "Accuracy": 33.3,
+        "TriggerType": "Semi-Auto",
+        "DamageTable": [13.8, 18.4, 13.8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      },
+      {
+        "AttackName": "Full-Auto",
+        "Bullets": 1,
+        "FireRate": 8.33,
+        "CritChance": .16,
+        "CritMultiplier": 2.8,
+        "StatusChance": .32,
+        "Accuracy": 33.3,
+        "TriggerType": "Auto",
+        "DamageTable": [13.8, 18.4, 13.8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      }
+    ],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 42,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Veldt": {
+    "GunName": "Veldt",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Semi-Auto",
+      "Bullets": 1,
+      "FireRate": 3.67,
+      "CritChance": .22,
+      "CritMultiplier": 2.2,
+      "StatusChance": .22,
+      "Accuracy": 32,
+      "TriggerType": "Semi-Auto",
+      "DamageTable": [23.4, 23.4, 43.2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 16,
+    "AmmoMax": 528,
+    "ReloadTime": 1.8
+  },
+  "Zenith": {
+    "GunName": "Zenith",
+    "Class": "Rifle",
+    "FireModes": [{
+        "AttackName": "Full-Auto",
+        "Bullets": 1,
+        "FireRate": 10.83,
+        "CritChance": .1,
+        "CritMultiplier": 2.0,
+        "StatusChance": .34,
+        "Accuracy": 33.3,
+        "TriggerType": "Auto",
+        "DamageTable": [4.5, 6, 19.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      },
+      {
+        "AttackName": "Semi-Auto",
+        "Bullets": 1,
+        "FireRate": 3.0,
+        "CritChance": .35,
+        "CritMultiplier": 2.5,
+        "StatusChance": .08,
+        "Accuracy": 33.3,
+        "TriggerType": "Semi-Auto",
+        "DamageTable": [15, 120, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      }
+    ],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 90,
+    "AmmoMax": 540,
+    "ReloadTime": 1.4
+  },
+  "Amprex": {
+    "GunName": "Amprex",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 12,
+      "AmmoConsumtionRate": 0.5,
+      "CritChance": .32,
+      "CritMultiplier": 2.2,
+      "StatusChance": .22,
+      "Accuracy": 12.5,
+      "TriggerType": "Held",
+      "DamageTable": [0, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 100,
+    "AmmoMax": 700,
+    "ReloadTime": 2.6
+  },
+  "Flux Rifle": {
+    "GunName": "Flux Rifle",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 12,
+      "AmmoConsumtionRate": 0.5,
+      "CritChance": .1,
+      "CritMultiplier": 2.0,
+      "StatusChance": .24,
+      "Accuracy": 100,
+      "TriggerType": "Held",
+      "DamageTable": [0, 4.8, 17.2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 50,
+    "AmmoMax": 50,
+    "ReloadTime": 2.25
+  },
+  "Glaxion": {
+    "GunName": "Glaxion",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 12,
+      "AmmoConsumtionRate": 0.5,
+      "CritChance": .08,
+      "CritMultiplier": 2.0,
+      "StatusChance": .34,
+      "Accuracy": 100,
+      "TriggerType": "Held",
+      "DamageTable": [0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 80,
+    "AmmoMax": 720,
+    "ReloadTime": 2.2
+  },
+  "Ignis": {
+    "GunName": "Ignis",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 8,
+      "AmmoConsumtionRate": 0.5,
+      "CritChance": .11,
+      "CritMultiplier": 2.0,
+      "StatusChance": .27,
+      "Accuracy": 100,
+      "TriggerType": "Held",
+      "DamageTable": [0, 0, 0, 0, 0, 33, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 150,
+    "AmmoMax": 750,
+    "ReloadTime": 2.0
+  },
+  "Ignis Wraith": {
+    "GunName": "Ignis Wraith",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 8,
+      "AmmoConsumtionRate": 0.5,
+      "CritChance": .17,
+      "CritMultiplier": 2.5,
+      "StatusChance": .29,
+      "Accuracy": 100,
+      "TriggerType": "Held",
+      "DamageTable": [0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 200,
+    "AmmoMax": 800,
+    "ReloadTime": 1.7
+  },
+  "Quanta": {
+    "GunName": "Quanta",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 12,
+      "AmmoConsumtionRate": 0.5,
+      "CritChance": .16,
+      "CritMultiplier": 2.2,
+      "StatusChance": .16,
+      "Accuracy": 100,
+      "TriggerType": "Held",
+      "DamageTable": [0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 60,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Quanta Vandal": {
+    "GunName": "Quanta Vandal",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 12,
+      "AmmoConsumtionRate": 0.5,
+      "CritChance": .22,
+      "CritMultiplier": 2.4,
+      "StatusChance": .3,
+      "Accuracy": 100,
+      "TriggerType": "Held",
+      "DamageTable": [0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 80,
+    "AmmoMax": 560,
+    "ReloadTime": 1.8
+  },
+  "Synapse": {
+    "GunName": "Synapse",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 12,
+      "AmmoConsumtionRate": 0.5,
+      "CritChance": .39,
+      "CritMultiplier": 2.7,
+      "StatusChance": .13,
+      "Accuracy": 100,
+      "TriggerType": "Held",
+      "DamageTable": [0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 70,
+    "AmmoMax": 540,
+    "ReloadTime": 1.5
+  },
+  "Ferrox": {
+    "GunName": "Ferrox",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Charged Shot",
+      "Bullets": 1,
+      "FireRate": 1.33,
+      "ChargeTime": 0.5,
+      "CritChance": .32,
+      "CritMultiplier": 2.8,
+      "StatusChance": .10,
+      "Accuracy": 16.7,
+      "TriggerType": "Charge",
+      "DamageTable": [35, 245, 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 10,
+    "AmmoMax": 540,
+    "ReloadTime": 2.0
+  },
+  "Javlok": {
+    "GunName": "Javlok",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Charged Shot",
+      "Bullets": 1,
+      "FireRate": 3.33,
+      "ChargeTime": 0.3,
+      "CritChance": .2,
+      "CritMultiplier": 2.0,
+      "StatusChance": .25,
+      "Accuracy": 100,
+      "TriggerType": "Charge",
+      "DamageTable": [0, 0, 0, 0, 0, 230, 0, 0, 0, 0, 0, 0, 0],
+      "AdditionalEffect": {
+        "AttackName": "Area Explosion",
+        "EffectType": "ADD",
+        "CritChance": .2,
+        "CritMultiplier": 2.0,
+        "StatusChance": .25,
+        "DamageTable": [0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0],
+        "MaxRange": 7
+      }
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 6,
+    "AmmoMax": 300,
+    "ReloadTime": 0.6
+  },
+  "Scourge": {
+    "GunName": "Scourge",
+    "Class": "Rifle",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Bullets": 1,
+      "FireRate": 2.67,
+      "CritChance": .02,
+      "CritMultiplier": 1.5,
+      "StatusChance": .30,
+      "Accuracy": 100,
+      "TriggerType": "Auto",
+      "DamageTable": [0, 0, 0, 0, 0, 0, 0, 0, 70, 0, 0, 0, 0],
+      "AdditionalEffect": {
+        "AttackName": "Area Explosion",
+        "EffectType": "ADD",
+        "CritChance": .02,
+        "CritMultiplier": 1.5,
+        "StatusChance": .30,
+        "DamageTable": [0, 0, 0, 0, 0, 0, 0, 0, 30, 0, 0, 0, 0],
+        "MaxRange": 7
+      }
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 20,
+    "AmmoMax": 100,
+    "ReloadTime": 0.6
+  },
+  "Arca Plasmor": {
+    "GunName": "Arca Plasmor",
+    "Class": "Shotgun",
+    "FireModes": [{
+      "AttackName": "Semi-Auto",
+      "Bullets": 1,
+      "FireRate": 1.1,
+      "CritChance": .22,
+      "CritMultiplier": 1.6,
+      "StatusChance": .28,
+      "Accuracy": 9.1,
+      "TriggerType": "Semi-Auto",
+      "DamageTable": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 600, 0],
+      "DamageFalloff": {
+        "Start": 10,
+        "Stop": 20,
+        "MaxPenalty": .6667
+      },
+      "MaxRange": 30,
+      "ForcedProcs": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 10,
+    "AmmoMax": 48,
+    "ReloadTime": 2.8
+  },
+  "Astilla": {
+    "GunName": "Astilla",
+    "Class": "Shotgun",
+    "FireModes": [{
+      "AttackName": "Slug",
+      "Pellets": 3,
+      "FireRate": 4.33,
+      "CritChance": .17,
+      "CritMultiplier": 1.9,
+      "StatusChance": .33,
+      "Accuracy": 25,
+      "TriggerType": "Auto",
+      "DamageTable": [25.9, 15.4, 28.7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "DamageFalloff": {
+        "Start": 30,
+        "Stop": 60,
+        "MaxPenalty": .5
+      },
+      "ForcedProcs": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "AdditionalEffect": {
+        "AttackName": "Glass Explosion",
+        "EffectType": "ADD",
+        "CritChance": .17,
+        "CritMultiplier": 1.9,
+        "StatusChance": .33,
+        "DamageTable": [44.4, 26.4, 49.2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "MaxRange": 5
+      }
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 16,
+    "AmmoMax": 112,
+    "ReloadTime": 2.0
+  },
+  "Boar": {
+    "GunName": "Boar",
+    "Class": "Shotgun",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Pellets": 8,
+      "FireRate": 4.17,
+      "CritChance": .10,
+      "CritMultiplier": 1.5,
+      "StatusChance": .20,
+      "Accuracy": 5,
+      "TriggerType": "Auto",
+      "DamageTable": [96.8, 26.4, 52.8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "DamageFalloff": {
+        "Start": 15,
+        "Stop": 25,
+        "MaxPenalty": .5
+      }
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 20,
+    "AmmoMax": 120,
+    "ReloadTime": 2.7
+  },
+  "Boar Prime": {
+    "GunName": "Boar Prime",
+    "Class": "Shotgun",
+    "FireModes": [{
+      "AttackName": "Full-Auto",
+      "Pellets": 8,
+      "FireRate": 4.67,
+      "CritChance": .15,
+      "CritMultiplier": 2.0,
+      "StatusChance": .30,
+      "Accuracy": 5,
+      "TriggerType": "Auto",
+      "DamageTable": [208, 48, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "DamageFalloff": {
+        "Start": 18,
+        "Stop": 25,
+        "MaxPenalty": .7
+      }
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 20,
+    "AmmoMax": 120,
+    "ReloadTime": 2.75
+  },
+  "Acrid": {
+    "GunName": "Acrid",
+    "Class": "Secondary",
+    "FireModes": [{
+      "AttackName": "Semi-Auto",
+      "Bullets": 1,
+      "FireRate": 6.67,
+      "CritChance": .05,
+      "CritMultiplier": 2.0,
+      "StatusChance": .10,
+      "Accuracy": 100,
+      "TriggerType": "Semi-Auto",
+      "DamageTable": [0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0],
+      "ForcedProcs": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+      "FlightSpeed": 65
+    }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 15,
+    "AmmoMax": 210,
+    "ReloadTime": 1.2
+  },
+  "Arca Smolicor CGS": {
+	"GunName": "Arca Smolicor CGS",
+    "Class": "Secondary",
+	"FireModes": [{
+      "AttackName": "Semi-Auto",
+	  "Bullets": 1,
+      "FireRate": 3.17,
+      "CritChance": .35,
+      "CritMultiplier": 2.3,
+      "StatusChance": .13,
+      "Accuracy": 5.9,
+      "TriggerType": "Semi-Auto",
+      "DamageTable": [41, 0, 0, 0, 0, 119, 0, 0, 0, 0, 0, 0, 0],
+	  }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 11,
+    "AmmoMax": 210,
+    "ReloadTime": 1.7
+  },
+  "Arca Smolicor CHS": {
+	"GunName": "Arca Smolicor CHS",
+    "Class": "Secondary",
+	"FireModes": [{
+      "AttackName": "Semi-Auto",
+	  "Bullets": 1,
+      "FireRate": 1.17,
+      "CritChance": .35,
+      "CritMultiplier": 2.3,
+      "StatusChance": .13,
+      "Accuracy": 5.9,
+      "TriggerType": "Semi-Auto",
+      "DamageTable": [191, 0, 0, 0, 0, 269, 0, 0, 0, 0, 0, 0, 0],
+	  }],
+    "NoiseLevel": "Alarming",
+    "MagazineSize": 11,
+    "AmmoMax": 210,
+    "ReloadTime": 1.7
+  }
+}

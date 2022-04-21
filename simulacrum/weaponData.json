@@ -1,0 +1,2518 @@
+weaponData = {
+    "Broken War": {
+      "WallAttack": 360,
+      "Type": "Melee",
+      "Image": "StalkerTwoSword.png",
+      "Disposition": 2,
+      "Cost": {
+        "Credits": 20000,
+        "Parts": [{
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Forma"
+        }, {
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Nitain Extract"
+        }, {
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Hilt"
+        }, {
+          "Type": "Item",
+          "Count": 2,
+          "Name": "Blade"
+        }],
+        "Rush": 25,
+        "Time": 12
+      },
+      "StancePolarity": "V",
+      "Mastery": 10,
+      "Class": "Sword",
+      "Conclave": true,
+      "BlockResist": 0.6,
+      "NormalAttack": {
+        "FireRate": 1,
+        "CritChance": 0.15,
+        "StatusChance": 0.1,
+        "Damage": {
+          "Puncture": 9,
+          "Impact": 9,
+          "Slash": 72
+        },
+        "CritMultiplier": 1.5
+      },
+      "Name": "Broken War",
+      "Polarities": ["V", "Bar"],
+      "SlideAttack": 193,
+      "Introduced": "[[Update 18#Update 18.0|Update 18.0]]",
+      "JumpAttack": 180
+    },
+    "Sarpa": {
+      "Disposition": 4,
+      "StancePolarity": "V",
+      "Mastery": 8,
+      "Class": "Gunblade",
+      "Type": "Melee",
+      "Image": "TnoGunbladeAuto.png",
+      "NormalAttack": {
+        "FireRate": 1,
+        "CritChance": 0.05,
+        "StatusChance": 0.1,
+        "Damage": {
+          "Puncture": 14,
+          "Impact": 7,
+          "Slash": 49
+        },
+        "CritMultiplier": 1.5
+      },
+      "ChargeAttack": {
+        "Damage": {
+          "Puncture": 35,
+          "Impact": 17.5,
+          "Slash": 122.5
+        },
+        "PelletCount": 5
+      },
+      "Polarities": ["D"],
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 175,
+        "BPCost": 20000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Weapon",
+          "Count": 1,
+          "Name": "Akstiletto"
+        }, {
+          "Type": "Resource",
+          "Count": 3300,
+          "Name": "Cryotic"
+        }, {
+          "Type": "Resource",
+          "Count": 1000,
+          "Name": "Plastids"
+        }, {
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Control Module"
+        }],
+        "Time": 12
+      },
+      "Traits": ["Tenno"],
+      "Conclave": false,
+      "BlockResist": 0.35,
+      "Name": "Sarpa",
+      "WallAttack": 280,
+      "SlideAttack": 210,
+      "Introduced": "[[Update_19#Update:_The_Silver_Grove|The Silver Grove]]",
+      "JumpAttack": 140
+    },
+    "Tonkor": {
+      "Magazine": 2,
+      "Disposition": 1,
+      "Mastery": 5,
+      "Class": "Launcher",
+      "Type": "Primary",
+      "Image": "GrnGrenadeLauncher.png",
+      "NormalAttack": {
+        "ShotSpeed": 30,
+        "ShotType": "Projectile",
+        "FireRate": 2,
+        "StatusChance": 0.1,
+        "CritChance": 0.25,
+        "AttackName": "Grenade Impact",
+        "Damage": {
+          "Puncture": 75
+        },
+        "CritMultiplier": 2.5
+      },
+      "Trigger": "Semi-Auto",
+      "Reload": 2,
+      "AreaAttack": {
+        "Radius": 5,
+        "AttackName": "Grenade Explosion",
+        "Damage": {
+          "Blast": 325
+        }
+      },
+      "MaxAmmo": 40,
+      "Cost": {
+        "Credits": 60000,
+        "MarketCost": 200,
+        "BPCost": 30000,
+        "Rush": 45,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 1500,
+          "Name": "Salvage"
+        }, {
+          "Type": "Resource",
+          "Count": 200,
+          "Name": "Oxium"
+        }, {
+          "Type": "Resource",
+          "Count": 800,
+          "Name": "Cryotic"
+        }, {
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Argon Crystal"
+        }],
+        "Time": 24
+      },
+      "Traits": ["Grineer"],
+      "Introduced": "[[Update 16#Update 16.4|Update 16.4]]",
+      "Name": "Tonkor",
+      "Accuracy": 100,
+      "Users": ["[[Kuva Napalm]]", "[[Nightwatch Reaver]]"]
+    },
+    "Hikou Prime": {
+      "Magazine": 26,
+      "Disposition": 1,
+      "Mastery": 4,
+      "Class": "Thrown",
+      "Type": "Secondary",
+      "Image": "PrimeHikou.png",
+      "NormalAttack": {
+        "ShotSpeed": 70,
+        "FireRate": 5.83,
+        "ShotType": "Projectile",
+        "CritChance": 0.06,
+        "StatusChance": 0.28,
+        "Damage": {
+          "Puncture": 30.6,
+          "Impact": 3.6,
+          "Slash": 1.8
+        },
+        "CritMultiplier": 1.8
+      },
+      "Trigger": "Auto",
+      "Reload": 0.5,
+      "MaxAmmo": 210,
+      "Polarities": ["V", "V"],
+      "Cost": {
+        "Credits": 15000,
+        "Parts": [{
+          "Type": "PrimePart",
+          "Count": 2,
+          "Name": "Pouch"
+        }, {
+          "Type": "PrimePart",
+          "Count": 2,
+          "Name": "Stars"
+        }, {
+          "Type": "Resource",
+          "Count": 8,
+          "Name": "Orokin Cell"
+        }],
+        "Rush": 50,
+        "Time": 12
+      },
+      "Traits": ["Prime", "Vaulted"],
+      "Conclave": true,
+      "Name": "Hikou Prime",
+      "Accuracy": 100,
+      "Introduced": "[[Update 14#Update 14.8|Update 14.8]]",
+      "Family": "Hikou"
+    },
+    "Sheev": {
+      "Disposition": 4,
+      "StancePolarity": "V",
+      "Mastery": 0,
+      "Class": "Dagger",
+      "Type": "Melee",
+      "Image": "GrineerCombatKnife.png",
+      "NormalAttack": {
+        "FireRate": 0.667,
+        "CritChance": 0.05,
+        "StatusChance": 0.25,
+        "Damage": {
+          "Puncture": 2.25,
+          "Impact": 2.25,
+          "Slash": 40.5
+        },
+        "CritMultiplier": 2
+      },
+      "Polarities": ["Bar"],
+      "Cost": {
+        "Credits": 20000,
+        "Parts": [{
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Blade"
+        }, {
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Heatsink"
+        }, {
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Hilt"
+        }],
+        "Rush": 35,
+        "Time": 12
+      },
+      "Traits": ["Grineer"],
+      "Conclave": true,
+      "BlockResist": 0.35,
+      "WallAttack": 135,
+      "Name": "Sheev",
+      "Users": ["[[Executioners/Harkonar|Harkonar]]", "[[Executioners/Nok|Nok]]", "[[Executioners/Reth|Reth]]", "Ranged [[Grineer]] soldiers"],
+      "SlideAttack": 96,
+      "Introduced": "[[Update 14#Update 14.7|Update 14.7]]",
+      "JumpAttack": 90
+    },
+    "Lanzo": {
+      "Range": 20,
+      "Disposition": 0,
+      "Class": "Thrown",
+      "Type": "Gear",
+      "Image": "IconFishingSpear1.png",
+      "NormalAttack": {
+        "CritMultiplier": 2,
+        "Damage": {
+          "Impact": 10
+        },
+        "StatusChance": 0
+      },
+      "Name": "Lanzo",
+      "Traits": ["Cetus"],
+      "Introduced": "[[Update 22]]",
+      "Trigger": "Semi-Auto",
+      "Family": "Fishing Spear"
+    },
+    "Dual Raza": {
+      "Disposition": 5,
+      "StancePolarity": "Bar",
+      "Mastery": 6,
+      "Class": "Dual Swords",
+      "Type": "Melee",
+      "Image": "SomaDualKamas.png",
+      "NormalAttack": {
+        "FireRate": 0.917,
+        "CritChance": 0.2,
+        "StatusChance": 0.05,
+        "Damage": {
+          "Puncture": 14.4,
+          "Impact": 4.8,
+          "Slash": 28.8
+        },
+        "CritMultiplier": 3
+      },
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 175,
+        "BPCost": 15000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Weapon",
+          "Count": 1,
+          "Name": "Dual Kamas"
+        }, {
+          "Type": "Resource",
+          "Count": 200,
+          "Name": "Cryotic"
+        }, {
+          "Type": "Resource",
+          "Count": 200,
+          "Name": "Alloy Plate"
+        }, {
+          "Type": "Resource",
+          "Count": 1,
+          "Name": "Orokin Cell"
+        }],
+        "Time": 12
+      },
+      "Traits": ["Tenno"],
+      "Conclave": true,
+      "BlockResist": 0.6,
+      "WallAttack": 192,
+      "Name": "Dual Raza",
+      "Users": ["[[Junction|Rhino Specter]]"],
+      "SlideAttack": 288,
+      "Introduced": "[[Update 16#Update 16.3|Update 16.3]]",
+      "JumpAttack": 96
+    },
+    "Reaper Prime": {
+      "WallAttack": 150,
+      "Type": "Melee",
+      "Traits": ["Prime", "Vaulted"],
+      "Disposition": 4,
+      "Cost": {
+        "Credits": 15000,
+        "Parts": [{
+          "Type": "PrimePart",
+          "Count": 1,
+          "Name": "Blade"
+        }, {
+          "Type": "PrimePart",
+          "Count": 1,
+          "Name": "Handle"
+        }, {
+          "Type": "Resource",
+          "Count": 10,
+          "Name": "Orokin Cell"
+        }],
+        "Rush": 50,
+        "Time": 12
+      },
+      "StancePolarity": "Bar",
+      "Mastery": 2,
+      "Class": "Scythe",
+      "Conclave": true,
+      "BlockResist": 0.85,
+      "NormalAttack": {
+        "FireRate": 1.08,
+        "CritChance": 0.2,
+        "StatusChance": 0.12,
+        "Damage": {
+          "Puncture": 11.3,
+          "Impact": 11.3,
+          "Slash": 52.5
+        },
+        "CritMultiplier": 2
+      },
+      "Name": "Reaper Prime",
+      "Image": "ReaperPrime.png",
+      "SlideAttack": 150,
+      "Introduced": "[[Update 8#Update 8.0|Update 8.0]]",
+      "JumpAttack": 150
+    },
+    "Pox": {
+      "Magazine": 4,
+      "Disposition": 2,
+      "Mastery": 9,
+      "Class": "Thrown",
+      "Type": "Secondary",
+      "Image": "InfProximityStars.png",
+      "NormalAttack": {
+        "ShotSpeed": "???",
+        "ShotType": "Projectile",
+        "FireRate": 2.08,
+        "StatusChance": 0.35,
+        "CritChance": 0.01,
+        "AttackName": "Spore Impact",
+        "Damage": {
+          "Toxin": 50
+        },
+        "CritMultiplier": 2
+      },
+      "Trigger": "Auto",
+      "Reload": 1,
+      "AreaAttack": {
+        "AttackName": "Poison Cloud",
+        "Damage": {
+          "Toxin": 100
+        },
+        "Duration": 5
+      },
+      "MaxAmmo": 20,
+      "Polarities": ["V", "V"],
+      "Cost": {
+        "Credits": 30000,
+        "MarketCost": 175,
+        "BPCost": 15000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 4,
+          "Name": "Mutagen Mass"
+        }, {
+          "Type": "Resource",
+          "Count": 6500,
+          "Name": "Nano Spores"
+        }, {
+          "Type": "Resource",
+          "Count": 1200,
+          "Name": "Rubedo"
+        }, {
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Nitain Extract"
+        }],
+        "Time": 24
+      },
+      "Traits": ["Infested"],
+      "Conclave": true,
+      "Name": "Pox",
+      "Accuracy": 100,
+      "NoiseLevel": "Silent",
+      "Introduced": "[[Update_19#Update:_The_Silver_Grove|The Silver Grove]]"
+    },
+    "Arca Titron": {
+      "Disposition": 3,
+      "StancePolarity": "V",
+      "Mastery": 10,
+      "Class": "Hammer",
+      "Type": "Melee",
+      "Image": "CrpHammer.png",
+      "NormalAttack": {
+        "FireRate": 0.733,
+        "CritChance": 0.24,
+        "StatusChance": 0.38,
+        "Damage": {
+          "Puncture": 0,
+          "Impact": 117,
+          "Slash": 63
+        },
+        "CritMultiplier": 2
+      },
+      "Polarities": ["V", "Bar"],
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 180,
+        "BPCost": 30000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Argon Crystal"
+        }, {
+          "Type": "Resource",
+          "Count": 6,
+          "Name": "Gallium"
+        }, {
+          "Type": "Resource",
+          "Count": 2150,
+          "Name": "Circuits"
+        }, {
+          "Type": "Resource",
+          "Count": 1200,
+          "Name": "Ferrite"
+        }],
+        "Time": 12
+      },
+      "Traits": ["Corpus"],
+      "Conclave": true,
+      "BlockResist": 0.85,
+      "WallAttack": 360,
+      "Name": "Arca Titron",
+      "JumpAttack": 360,
+      "SlideAttack": 360,
+      "Introduced": "[[Update 21#Update 21.7|Update 21.7]]",
+      "Family": "Arca"
+    },
+    "Brakk": {
+      "Magazine": 5,
+      "Disposition": 2,
+      "Mastery": 6,
+      "Class": "Shotgun Sidearm",
+      "Type": "Secondary",
+      "Image": "DEGrineerHandShotgun.png",
+      "NormalAttack": {
+        "ShotType": "Hit-Scan",
+        "PelletCount": 10,
+        "FireRate": 5,
+        "Falloff": {
+          "StartRange": 11,
+          "EndRange": 22,
+          "Reduction": 0.6
+        },
+        "CritChance": 0.17,
+        "StatusChance": 0.17,
+        "Damage": {
+          "Puncture": 50,
+          "Impact": 90,
+          "Slash": 60
+        },
+        "CritMultiplier": 2
+      },
+      "Trigger": "Semi-Auto",
+      "Reload": 1.05,
+      "MaxAmmo": 210,
+      "Polarities": ["Bar", "V"],
+      "Cost": {
+        "Credits": 15000,
+        "Parts": [{
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Barrel"
+        }, {
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Receiver"
+        }, {
+          "Type": "Resource",
+          "Count": 10,
+          "Name": "Orokin Cell"
+        }],
+        "Rush": 50,
+        "Time": 12
+      },
+      "Traits": ["Grineer"],
+      "Conclave": true,
+      "Name": "Brakk",
+      "Accuracy": 5.6,
+      "Introduced": "[[Update 10#Update 10.6|Update 10.6]]"
+    },
+    "Dera": {
+      "Magazine": 45,
+      "Disposition": 4,
+      "Mastery": 4,
+      "Class": "Rifle",
+      "Type": "Primary",
+      "Image": "CorpusEnergyRifle.png",
+      "NormalAttack": {
+        "ShotSpeed": 100,
+        "FireRate": 11.25,
+        "ShotType": "Projectile",
+        "CritChance": 0.08,
+        "StatusChance": 0.22,
+        "Damage": {
+          "Puncture": 22.5,
+          "Impact": 6,
+          "Slash": 1.5
+        },
+        "CritMultiplier": 1.6
+      },
+      "Trigger": "Auto",
+      "Reload": 1.8,
+      "MaxAmmo": 540,
+      "Cost": {
+        "Credits": 25000,
+        "BPCost": 15000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Fieldron"
+        }, {
+          "Type": "Resource",
+          "Count": 600,
+          "Name": "Circuits"
+        }, {
+          "Type": "Resource",
+          "Count": 4500,
+          "Name": "Ferrite"
+        }, {
+          "Type": "Resource",
+          "Count": 1,
+          "Name": "Forma"
+        }],
+        "Time": 24
+      },
+      "Conclave": true,
+      "Name": "Dera",
+      "Accuracy": 100,
+      "Users": ["[[Crewman]]", "[[Corrupted Lancer]]", "[[Ranger]]"],
+      "Introduced": "[[Update 8#Update 8.0|Update 8.0]]",
+      "Family": "Dera"
+    },
+    "Bo Prime": {
+      "Disposition": 4,
+      "StancePolarity": "R",
+      "Mastery": 5,
+      "Class": "Staff",
+      "Type": "Melee",
+      "Image": "PrimeBo.png",
+      "NormalAttack": {
+        "FireRate": 1.08,
+        "CritChance": 0.125,
+        "StatusChance": 0.25,
+        "Damage": {
+          "Impact": 67.5,
+          "Puncture": 7.5
+        },
+        "CritMultiplier": 2
+      },
+      "Polarities": ["D", "V"],
+      "Cost": {
+        "Credits": 15000,
+        "Parts": [{
+          "Type": "PrimePart",
+          "Count": 2,
+          "Name": "Ornament"
+        }, {
+          "Type": "PrimePart",
+          "Count": 1,
+          "Name": "Handle"
+        }, {
+          "Type": "Resource",
+          "Count": 10,
+          "Name": "Orokin Cell"
+        }],
+        "Rush": 50,
+        "Time": 12
+      },
+      "WallAttack": 125,
+      "Traits": ["Prime", "Vaulted"],
+      "Conclave": true,
+      "BlockResist": 0.6,
+      "Stagger": "Yes",
+      "Name": "Bo Prime",
+      "JumpAttack": 150,
+      "SlideAttack": 161,
+      "Introduced": "[[Update 13#Update 13.7|Update 13.7]]",
+      "Family": "Bo"
+    },
+    "Pyrana": {
+      "Magazine": 10,
+      "Disposition": 4,
+      "Mastery": 12,
+      "Class": "Shotgun Sidearm",
+      "Type": "Secondary",
+      "Image": "SawnOffShotgun.png",
+      "NormalAttack": {
+        "ShotType": "Hit-Scan",
+        "PelletCount": 12,
+        "FireRate": 4.17,
+        "Falloff": {
+          "StartRange": 15,
+          "EndRange": 30,
+          "Reduction": 0.7273
+        },
+        "CritChance": 0.2,
+        "StatusChance": 0.1,
+        "Damage": {
+          "Puncture": 26.4,
+          "Impact": 26.4,
+          "Slash": 211.2
+        },
+        "CritMultiplier": 2
+      },
+      "Trigger": "Auto",
+      "Reload": 2,
+      "MaxAmmo": 210,
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 175,
+        "BPCost": 15000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Control Module"
+        }, {
+          "Type": "Resource",
+          "Count": 800,
+          "Name": "Salvage"
+        }, {
+          "Type": "Resource",
+          "Count": 200,
+          "Name": "Alloy Plate"
+        }, {
+          "Type": "Resource",
+          "Count": 1,
+          "Name": "Forma"
+        }],
+        "Time": 12
+      },
+      "Traits": ["Tenno"],
+      "Conclave": true,
+      "Name": "Pyrana",
+      "Accuracy": 5,
+      "Introduced": "[[Update 13#Update 13.6|Update 13.6]]",
+      "Family": "Pyrana"
+    },
+    "Rubico": {
+      "Magazine": 5,
+      "Disposition": 3,
+      "Mastery": 6,
+      "Class": "Sniper Rifle",
+      "Type": "Primary",
+      "Image": "FiveShotSniper.png",
+      "NormalAttack": {
+        "ShotType": "Hit-Scan",
+        "PunchThrough": 1,
+        "FireRate": 2.67,
+        "Falloff": {
+          "StartRange": 400,
+          "EndRange": 600
+        },
+        "CritChance": 0.3,
+        "StatusChance": 0.12,
+        "Damage": {
+          "Puncture": 27,
+          "Impact": 144,
+          "Slash": 9
+        },
+        "CritMultiplier": 3
+      },
+      "Trigger": "Semi-Auto",
+      "Reload": 2.4,
+      "MaxAmmo": 72,
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 225,
+        "BPCost": 20000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 3800,
+          "Name": "Salvage"
+        }, {
+          "Type": "Resource",
+          "Count": 1300,
+          "Name": "Polymer Bundle"
+        }, {
+          "Type": "Resource",
+          "Count": 900,
+          "Name": "Rubedo"
+        }, {
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Argon Crystal"
+        }],
+        "Time": 12
+      },
+      "Traits": ["Tenno"],
+      "Conclave": true,
+      "Zoom": ["3.5x (+35% Critical Damage)", "6x (+50% Critical Damage)"],
+      "Name": "Rubico",
+      "Accuracy": 13.3,
+      "SniperComboReset": 2,
+      "Introduced": "[[Update 18#Update 18.0|Update 18.0]]",
+      "SniperComboMin": 1
+    },
+    "Stug": {
+      "Magazine": 20,
+      "Users": ["[[Artificer]]"],
+      "Type": "Secondary",
+      "Disposition": 5,
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 120,
+        "BPCost": 20000,
+        "Rush": 25,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 3,
+          "Name": "Neurodes"
+        }, {
+          "Type": "Resource",
+          "Count": 4,
+          "Name": "Gallium"
+        }, {
+          "Type": "Resource",
+          "Count": 3000,
+          "Name": "Salvage"
+        }, {
+          "Type": "Resource",
+          "Count": 1200,
+          "Name": "Alloy Plate"
+        }],
+        "Time": 24
+      },
+      "Trigger": "Charge",
+      "Mastery": 2,
+      "Class": "Pistol",
+      "Introduced": "[[Update 11#Update 11.5|Update 11.5]]",
+      "Image": "GrineerCrossbowGooGun.png",
+      "NormalAttack": {
+        "ShotSpeed": 35,
+        "ShotType": "Projectile",
+        "FireRate": 4,
+        "StatusChance": 0,
+        "CritChance": 0.05,
+        "AttackName": "Normal Shot",
+        "Damage": {
+          "Corrosive": 156
+        },
+        "CritMultiplier": 1.5
+      },
+      "Name": "Stug",
+      "ChargeAttack": {
+        "ChargeTime": 3,
+        "ShotSpeed": "???",
+        "AmmoCost": 6,
+        "ShotType": "Projectile",
+        "AttackName": "Charged Shot",
+        "Damage": {
+          "Corrosive": 936
+        }
+      },
+      "Reload": 2,
+      "Traits": ["Grineer"],
+      "Polarities": ["D"]
+    },
+    "Pandero": {
+      "Magazine": 8,
+      "Disposition": 3,
+      "Mastery": 8,
+      "Class": "Pistol",
+      "SecondaryAttack": {
+        "FireRate": 7.69,
+        "AmmoCost": 8,
+        "Accuracy": 8.2,
+        "Damage": {
+          "Puncture": 18,
+          "Impact": 18,
+          "Slash": 36
+        },
+        "Trigger": "Burst"
+      },
+      "Image": "TnBardPistol.png",
+      "NormalAttack": {
+        "FireRate": 3,
+        "ShotType": "Hit-Scan",
+        "CritChance": 0.3,
+        "StatusChance": 0.1,
+        "Damage": {
+          "Puncture": 18,
+          "Impact": 18,
+          "Slash": 36
+        },
+        "CritMultiplier": 2.8
+      },
+      "Trigger": "Semi-Auto",
+      "Reload": 1,
+      "MaxAmmo": 210,
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 190,
+        "BPCost": 20000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Argon Crystal"
+        }, {
+          "Type": "Resource",
+          "Count": 4500,
+          "Name": "Circuits"
+        }, {
+          "Type": "Resource",
+          "Count": 5500,
+          "Name": "Cryotic"
+        }, {
+          "Type": "Resource",
+          "Count": 25000,
+          "Name": "Salvage"
+        }],
+        "Time": 12
+      },
+      "Traits": ["Tenno"],
+      "Conclave": true,
+      "Name": "Pandero",
+      "Accuracy": 16,
+      "Type": "Secondary",
+      "Introduced": "[[Update 20#Update: Octavia's Anthem|Update: Octavia's Anthem]]"
+    },
+    "Vaykor Marelok": {
+      "Magazine": 10,
+      "Disposition": 1,
+      "Mastery": 10,
+      "Class": "Pistol",
+      "Type": "Secondary",
+      "Image": "SMMarelok.png",
+      "NormalAttack": {
+        "FireRate": 2,
+        "ShotType": "Hit-Scan",
+        "CritChance": 0.2,
+        "StatusChance": 0.35,
+        "Damage": {
+          "Puncture": 16,
+          "Impact": 96,
+          "Slash": 48
+        },
+        "CritMultiplier": 1.5
+      },
+      "Trigger": "Semi-Auto",
+      "Reload": 1.67,
+      "Polarities": ["V", "D"],
+      "Cost": {
+        "Rank": 5,
+        "Syndicate": "Steel Meridian",
+        "Reputation": 125000
+      },
+      "SyndicateEffect": "Justice",
+      "Traits": ["Syndicate", "Steel Meridian"],
+      "Conclave": true,
+      "Name": "Vaykor Marelok",
+      "Accuracy": 10,
+      "Users": ["[[Steel Meridian]] [[Syndicate Operatives|Operatives]]"],
+      "Introduced": "[[Update 15#Update 15.5|Update 15.5]]",
+      "Family": "Marelok"
+    },
+    "Tekko": {
+      "Disposition": 5,
+      "StancePolarity": "D",
+      "Mastery": 2,
+      "Class": "Fist",
+      "Type": "Melee",
+      "Image": "BrawlerKnuckles.png",
+      "NormalAttack": {
+        "FireRate": 0.917,
+        "CritChance": 0.3,
+        "StatusChance": 0.1,
+        "Damage": {
+          "Puncture": 4.5,
+          "Impact": 9,
+          "Slash": 31.5
+        },
+        "CritMultiplier": 2
+      },
+      "Polarities": ["V"],
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 125,
+        "BPCost": 25000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 5,
+          "Name": "Gallium"
+        }, {
+          "Type": "Resource",
+          "Count": 700,
+          "Name": "Rubedo"
+        }, {
+          "Type": "Resource",
+          "Count": 3300,
+          "Name": "Polymer Bundle"
+        }, {
+          "Type": "Weapon",
+          "Count": 1,
+          "Name": "Ankyros"
+        }],
+        "Time": 12
+      },
+      "Traits": ["Tenno"],
+      "Conclave": true,
+      "BlockResist": 0.6,
+      "Name": "Tekko",
+      "WallAttack": 135,
+      "SlideAttack": 135,
+      "Introduced": "[[Update 17#Update_17.5|Update 17.5]]",
+      "JumpAttack": 45
+    },
+    "Corinth": {
+      "Magazine": 5,
+      "Disposition": 3,
+      "Mastery": 10,
+      "Class": "Shotgun",
+      "SecondaryAttack": {
+        "ShotType": "Projectile",
+        "ShotSpeed": "???",
+        "StatusChance": 0.28,
+        "CritChance": 0.04,
+        "AttackName": "Air Burst Projectile",
+        "Damage": {
+          "Impact": 100
+        },
+        "CritMultiplier": 1.6
+      },
+      "Image": "TnHeavyShotgun.png",
+      "NormalAttack": {
+        "FireRate": 1.17,
+        "Falloff": {
+          "StartRange": 18,
+          "EndRange": 36,
+          "Reduction": 0.6667
+        },
+        "CritMultiplier": 2.8,
+        "Damage": {
+          "Puncture": 226.8,
+          "Impact": 151.2,
+          "Slash": 162
+        },
+        "PelletCount": 6,
+        "CritChance": 0.3,
+        "AttackName": "Buckshot",
+        "ShotType": "Hit-Scan",
+        "StatusChance": 0.12
+      },
+      "Trigger": "Semi-Auto",
+      "SecondaryAreaAttack": {
+        "Radius": 8,
+        "StatusChance": 0.28,
+        "CritChance": 0.04,
+        "AttackName": "Air Burst Explosion",
+        "Damage": {
+          "Blast": 404
+        },
+        "CritMultiplier": 1.6
+      },
+      "Reload": 2.3,
+      "MaxAmmo": 132,
+      "Polarities": ["V", "V"],
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 240,
+        "BPCost": 25000,
+        "Rush": 40,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Nitain Extract"
+        }, {
+          "Type": "Resource",
+          "Count": 13000,
+          "Name": "Alloy Plate"
+        }, {
+          "Type": "Resource",
+          "Count": 6,
+          "Name": "Gallium"
+        }, {
+          "Type": "Resource",
+          "Count": 725,
+          "Name": "Cryotic"
+        }],
+        "Time": 12
+      },
+      "Traits": ["Tenno"],
+      "Conclave": true,
+      "Name": "Corinth",
+      "Accuracy": 9.1,
+      "Type": "Primary",
+      "Introduced": "[[Update 22#Update 22.8.0|Update 22]]"
+    },
+    "Strun Wraith": {
+      "Magazine": 10,
+      "Disposition": 5,
+      "Mastery": 10,
+      "Class": "Shotgun",
+      "Type": "Primary",
+      "Image": "WraithStrun.png",
+      "NormalAttack": {
+        "ShotType": "Hit-Scan",
+        "PelletCount": 10,
+        "FireRate": 2.5,
+        "Falloff": {
+          "StartRange": 15,
+          "EndRange": 30,
+          "Reduction": 0.5
+        },
+        "CritChance": 0.18,
+        "StatusChance": 0.4,
+        "Damage": {
+          "Puncture": 60,
+          "Impact": 260,
+          "Slash": 80
+        },
+        "CritMultiplier": 2.2
+      },
+      "Trigger": "Semi-Auto",
+      "Reload": 5,
+      "MaxAmmo": 120,
+      "Polarities": ["Bar"],
+      "Cost": {
+        "Credits": 25000,
+        "Parts": [{
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Barrel"
+        }, {
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Receiver"
+        }, {
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Stock"
+        }],
+        "Rush": 50,
+        "Time": 12
+      },
+      "Traits": ["Tenno", "Invasion Reward", "Wraith"],
+      "Conclave": true,
+      "ReloadStyle": "ByRound",
+      "Name": "Strun Wraith",
+      "Accuracy": 6.7,
+      "Introduced": "[[Update 9#Update 9.7.2|Update 9.7.2]]",
+      "Family": "Strun"
+    },
+    "Dual Keres": {
+      "Disposition": 5,
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 130,
+        "BPCost": 25000,
+        "Rush": "???",
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Argon Crystal"
+        }, {
+          "Type": "Resource",
+          "Count": 230,
+          "Name": "Oxium"
+        }, {
+          "Type": "Resource",
+          "Count": 13250,
+          "Name": "Salvage"
+        }, {
+          "Type": "Resource",
+          "Count": 3,
+          "Name": "Tellurium"
+        }],
+        "Time": 12
+      },
+      "StancePolarity": "Bar",
+      "Mastery": 7,
+      "Class": "Dual Swords",
+      "Introduced": "[[Update 22#Update 22.18|Update 22.18]]",
+      "Image": "DualKeres.png",
+      "NormalAttack": {
+        "FireRate": 1.25,
+        "CritChance": 0.28,
+        "StatusChance": 0.14,
+        "Damage": {
+          "Puncture": 13.2,
+          "Impact": 5.3,
+          "Slash": 25.5
+        },
+        "CritMultiplier": 2.6
+      },
+      "Name": "Dual Keres",
+      "WallAttack": 176,
+      "SlideAttack": 264,
+      "Type": "Melee",
+      "Family": "Dual Keres"
+    },
+    "Synoid Simulor": {
+      "Magazine": 15,
+      "Disposition": 1,
+      "Mastery": 12,
+      "Class": "Rifle",
+      "SecondaryAttack": {
+        "Radius": 8,
+        "CritMultiplier": 2,
+        "StatusChance": 0.35,
+        "AttackName": "Orb Explosion",
+        "Damage": {
+          "Electricity": 75
+        },
+        "CritChance": 0.05
+      },
+      "Image": "SyndicateCSSimulor.png",
+      "NormalAttack": {
+        "FireRate": 2.67,
+        "ShotType": "Projectile",
+        "AttackName": "Orb Damage",
+        "Damage": {
+          "Magnetic": 20
+        },
+        "ShotSpeed": "???"
+      },
+      "Trigger": "Active",
+      "Reload": 2,
+      "AreaAttack": {
+        "Damage": {
+          "Magnetic": 50
+        },
+        "AttackName": "Orb Merge"
+      },
+      "MaxAmmo": 75,
+      "Polarities": ["V", "D", "Bar"],
+      "SyndicateEffect": "Entropy",
+      "Traits": ["Syndicate", "Cephalon Suda", "Cephalon"],
+      "Conclave": true,
+      "Name": "Synoid Simulor",
+      "Accuracy": 100,
+      "Type": "Primary",
+      "Introduced": "[[Update 17#Update 17.3|Update 17.3]]"
+    },
+    "Dex Sybaris": {
+      "Magazine": 14,
+      "Disposition": 2,
+      "Mastery": 7,
+      "Class": "Rifle",
+      "Type": "Primary",
+      "Image": "DexSybaris.png",
+      "NormalAttack": {
+        "BurstCount": 2,
+        "FireRate": 4.17,
+        "ShotType": "Hit-Scan",
+        "CritChance": 0.35,
+        "StatusChance": 0.1,
+        "Damage": {
+          "Puncture": 18.75,
+          "Impact": 22.5,
+          "Slash": 33.75
+        },
+        "CritMultiplier": 2
+      },
+      "Trigger": "Burst",
+      "Reload": 1.5,
+      "MaxAmmo": 540,
+      "Traits": ["Tenno"],
+      "Conclave": true,
+      "Name": "Dex Sybaris",
+      "Accuracy": 28.6,
+      "Introduced": "[[Update 18#Update 18.6.2|Update 18.6.2]]",
+      "BurstFireRate": 3.33,
+      "Family": "Sybaris"
+    },
+    "Centaur": {
+      "Polarities": ["V"],
+      "Cost": {
+        "Credits": 25000,
+        "MarketCost": 150,
+        "BPCost": 35000,
+        "Rush": 50,
+        "Parts": [{
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Blade"
+        }, {
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Handle"
+        }, {
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Aegis"
+        }],
+        "Time": 12
+      },
+      "Mastery": 0,
+      "Traits": ["Tenno"],
+      "Introduced": "[[Update 15#Update 15.7.2|Update 15.7.2]]",
+      "Image": "Archswordandshield.png",
+      "NormalAttack": {
+        "FireRate": 1.08,
+        "CritChance": 0.25,
+        "StatusChance": 0.2,
+        "Damage": {
+          "Puncture": 56,
+          "Impact": 28,
+          "Slash": 196
+        },
+        "CritMultiplier": 2
+      },
+      "Name": "Centaur",
+      "WallAttack": 280,
+      "SlideAttack": 600,
+      "Type": "Arch-Melee",
+      "JumpAttack": 280
+    },
+    "Venka": {
+      "Disposition": 1,
+      "StancePolarity": "V",
+      "Mastery": 3,
+      "Class": "Claws",
+      "Type": "Melee",
+      "Image": "TennoClaws.png",
+      "NormalAttack": {
+        "FireRate": 1,
+        "CritChance": 0.15,
+        "StatusChance": 0.15,
+        "Damage": {
+          "Puncture": 9.25,
+          "Impact": 1.85,
+          "Slash": 25.9
+        },
+        "CritMultiplier": 2
+      },
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 175,
+        "BPCost": 15000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 4,
+          "Name": "Gallium"
+        }, {
+          "Type": "Resource",
+          "Count": 1000,
+          "Name": "Salvage"
+        }, {
+          "Type": "Resource",
+          "Count": 500,
+          "Name": "Plastids"
+        }, {
+          "Type": "Resource",
+          "Count": 1,
+          "Name": "Forma"
+        }],
+        "Time": 12
+      },
+      "WallAttack": 111,
+      "Traits": ["Tenno"],
+      "Conclave": true,
+      "BlockResist": 0.35,
+      "Users": ["[[Violence]]"],
+      "Name": "Venka",
+      "JumpAttack": 74,
+      "SlideAttack": 111,
+      "Introduced": "[[Update 13#Update 13.9|Update 13.9]]",
+      "Family": "Venka"
+    },
+    "Synoid Gammacor": {
+      "Magazine": 80,
+      "Disposition": 1,
+      "Mastery": 7,
+      "Class": "Pistol",
+      "Type": "Secondary",
+      "Image": "SynoidGammacor.png",
+      "NormalAttack": {
+        "ShotType": "Discharge",
+        "Range": 30,
+        "FireRate": 12,
+        "AmmoCost": 0.5,
+        "CritChance": 0.2,
+        "StatusChance": 0.28,
+        "Damage": {
+          "Magnetic": 20
+        },
+        "CritMultiplier": 2
+      },
+      "Trigger": "Held",
+      "Reload": 1.8,
+      "MaxAmmo": 400,
+      "Polarities": ["D", "Bar"],
+      "SyndicateEffect": "Entropy",
+      "Traits": ["Syndicate", "Cephalon Suda"],
+      "Conclave": true,
+      "Name": "Synoid Gammacor",
+      "Accuracy": 100,
+      "Users": ["[[Cephalon Suda]] [[Syndicate Operatives|Operatives]]"],
+      "Introduced": "[[Update 15#Update 15.5|Update 15.5]]"
+    },
+    "Serro": {
+      "Disposition": 5,
+      "StancePolarity": "Bar",
+      "Mastery": 2,
+      "Class": "Polearm",
+      "Type": "Melee",
+      "Image": "Corpuspolearm.png",
+      "NormalAttack": {
+        "FireRate": 0.917,
+        "CritChance": 0.05,
+        "StatusChance": 0.25,
+        "Damage": {
+          "Electricity": 75
+        },
+        "CritMultiplier": 1.5
+      },
+      "Polarities": ["V"],
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 180,
+        "BPCost": 15000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 1,
+          "Name": "Fieldron"
+        }, {
+          "Type": "Resource",
+          "Count": 400,
+          "Name": "Circuits"
+        }, {
+          "Type": "Resource",
+          "Count": 1000,
+          "Name": "Salvage"
+        }, {
+          "Type": "Resource",
+          "Count": 3,
+          "Name": "Neural Sensors"
+        }],
+        "Time": 24
+      },
+      "Traits": ["Corpus"],
+      "Conclave": true,
+      "BlockResist": 0.85,
+      "Name": "Serro",
+      "WallAttack": 125,
+      "SlideAttack": 167,
+      "Introduced": "[[Update 13#Update 13.4|Update 13.4]]",
+      "JumpAttack": 150
+    },
+    "Ceramic Dagger": {
+      "Disposition": 5,
+      "StancePolarity": "V",
+      "Mastery": 3,
+      "Class": "Dagger",
+      "Type": "Melee",
+      "Image": "Cronus.png",
+      "NormalAttack": {
+        "FireRate": 1,
+        "CritChance": 0.05,
+        "StatusChance": 0.1,
+        "Damage": {
+          "Impact": 3.5,
+          "Puncture": 31.5
+        },
+        "CritMultiplier": 1.5
+      },
+      "Polarities": ["V"],
+      "Cost": {
+        "Credits": 15000,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 4,
+          "Name": "Gallium"
+        }, {
+          "Type": "Resource",
+          "Count": 500,
+          "Name": "Ferrite"
+        }, {
+          "Type": "Resource",
+          "Count": 500,
+          "Name": "Alloy Plate"
+        }, {
+          "Type": "Resource",
+          "Count": 600,
+          "Name": "Polymer Bundle"
+        }],
+        "Rush": 25,
+        "Time": 12
+      },
+      "Traits": ["Tenno"],
+      "Conclave": true,
+      "BlockResist": 0.35,
+      "Name": "Ceramic Dagger",
+      "WallAttack": 105,
+      "SlideAttack": 75,
+      "Introduced": "[[Update 5#Update 5.0|Update 5.0]]",
+      "JumpAttack": 70
+    },
+    "Kunai": {
+      "Magazine": 10,
+      "Disposition": 5,
+      "Mastery": 2,
+      "Class": "Thrown",
+      "Type": "Secondary",
+      "Image": "Kunai2.png",
+      "NormalAttack": {
+        "ShotSpeed": 70,
+        "FireRate": 3.33,
+        "ShotType": "Projectile",
+        "CritChance": 0.08,
+        "StatusChance": 0.08,
+        "Damage": {
+          "Puncture": 34.5,
+          "Impact": 4.6,
+          "Slash": 6.9
+        },
+        "CritMultiplier": 1.6
+      },
+      "Trigger": "Auto",
+      "Reload": 0.8,
+      "MaxAmmo": 210,
+      "Polarities": ["V", "V"],
+      "Cost": {
+        "Credits": 15000,
+        "MarketCost": 175,
+        "BPCost": 15000,
+        "Rush": 50,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 5,
+          "Name": "Morphics"
+        }, {
+          "Type": "Resource",
+          "Count": 3000,
+          "Name": "Ferrite"
+        }, {
+          "Type": "Resource",
+          "Count": 4000,
+          "Name": "Nano Spores"
+        }, {
+          "Type": "Resource",
+          "Count": 4000,
+          "Name": "Salvage"
+        }],
+        "Time": 12
+      },
+      "Traits": ["Tenno"],
+      "Conclave": true,
+      "Name": "Kunai",
+      "Accuracy": 100,
+      "Users": ["[[Junction|Nova Specter]]"],
+      "Introduced": "[[Update 8#Update 8.0|Update 8.0]]"
+    },
+    "Javlok": {
+      "Magazine": 6,
+      "Disposition": 3,
+      "Mastery": 7,
+      "Class": "Speargun",
+      "SecondaryAttack": {
+        "ChargeTime": 0.5,
+        "FireRate": 1,
+        "CritMultiplier": 2,
+        "Damage": {
+          "Puncture": 75,
+          "Impact": 45,
+          "Slash": 30
+        },
+        "ShotSpeed": "???",
+        "ShotType": "Projectile",
+        "Reload": 0.6,
+        "Accuracy": 16.7,
+        "AttackName": "Throw Spear",
+        "StatusChance": 0.25,
+        "CritChance": 0.2
+      },
+      "Image": "GrnFlameSpear.png",
+      "Trigger": "Charge",
+      "ChargeAttack": {
+        "ChargeTime": 0.3,
+        "FireRate": 3.33,
+        "CritMultiplier": 2,
+        "Damage": {
+          "Heat": 230
+        },
+        "ShotSpeed": "???",
+        "ShotType": "Projectile",
+        "Reload": 1.9,
+        "Accuracy": 100,
+        "AttackName": "Projectile Impact",
+        "StatusChance": 0.25,
+        "CritChance": 0.2
+      },
+      "AreaAttack": {
+        "Radius": 1.6,
+        "StatusChance": 0.25,
+        "CritChance": 0.2,
+        "AttackName": "Explosion",
+        "Damage": {
+          "Heat": 50
+        },
+        "CritMultiplier": 2
+      },
+      "MaxAmmo": 300,
+      "Polarities": ["V", "V"],
+      "Cost": {
+        "Credits": 30000,
+        "MarketCost": 240,
+        "BPCost": 15000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 5,
+          "Name": "Detonite Injector"
+        }, {
+          "Type": "Resource",
+          "Count": 10000,
+          "Name": "Alloy Plate"
+        }, {
+          "Type": "Resource",
+          "Count": 5,
+          "Name": "Nitain Extract"
+        }, {
+          "Type": "Resource",
+          "Count": 6,
+          "Name": "Javlok Capacitor"
+        }],
+        "Time": 24
+      },
+      "Traits": ["Grineer"],
+      "Conclave": true,
+      "Name": "Javlok",
+      "Type": "Primary",
+      "SecondaryAreaAttack": {
+        "Radius": 7,
+        "StatusChance": 0.25,
+        "CritChance": 0.2,
+        "AttackName": "Spear Explosion",
+        "Damage": {
+          "Heat": 300
+        },
+        "CritMultiplier": 2
+      }
+    },
+    "Dragon Nikana": {
+      "Disposition": 5,
+      "StancePolarity": "V",
+      "Mastery": 8,
+      "Class": "Nikana",
+      "Type": "Melee",
+      "Image": "DragonKatana.png",
+      "NormalAttack": {
+        "FireRate": 1,
+        "CritChance": 0.15,
+        "StatusChance": 0.15,
+        "Damage": {
+          "Puncture": 8.5,
+          "Impact": 4.25,
+          "Slash": 72.25
+        },
+        "CritMultiplier": 2
+      },
+      "Polarities": ["V", "D"],
+      "Cost": {
+        "Credits": 5000,
+        "MarketCost": 275,
+        "BPCost": 30000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 1,
+          "Name": "Argon Crystal"
+        }, {
+          "Type": "Resource",
+          "Count": 75,
+          "Name": "Oxium"
+        }, {
+          "Type": "Weapon",
+          "Count": 1,
+          "Name": "Nikana"
+        }],
+        "Time": 12
+      },
+      "Traits": ["Tenno"],
+      "Conclave": true,
+      "BlockResist": 0.85,
+      "Name": "Dragon Nikana",
+      "WallAttack": 182,
+      "SlideAttack": 182,
+      "Introduced": "[[Update 13#Update 13.0|Update 13.0]]",
+      "JumpAttack": 170
+    },
+    "Kulstar": {
+      "Magazine": 3,
+      "Disposition": 3,
+      "Mastery": 5,
+      "Class": "Pistol",
+      "Type": "Secondary",
+      "Image": "GrnTorpedoPistol.png",
+      "NormalAttack": {
+        "FireRate": 2,
+        "ShotType": "Projectile",
+        "ShotSpeed": "???",
+        "StatusChance": 0.19,
+        "CritChance": 0.17,
+        "AttackName": "Rocket Impact",
+        "Damage": {
+          "Impact": 200
+        },
+        "CritMultiplier": 2.3
+      },
+      "Trigger": "Semi-Auto",
+      "SecondaryAreaAttack": {
+        "PelletCount": 3,
+        "PelletName": "Bomb",
+        "StatusChance": 0.19,
+        "CritChance": 0.17,
+        "AttackName": "Cluster Bombs",
+        "Damage": {
+          "Blast": 225
+        },
+        "CritMultiplier": 2.3
+      },
+      "Reload": 2,
+      "AreaAttack": {
+        "ShotType": "Projectile",
+        "AttackName": "Rocket Explosion",
+        "Damage": {
+          "Blast": 300
+        },
+        "ShotSpeed": "???"
+      },
+      "MaxAmmo": 15,
+      "Polarities": ["D"],
+      "Cost": {
+        "Credits": 30000,
+        "MarketCost": 190,
+        "BPCost": 40000,
+        "Parts": [{
+          "Type": "Weapon",
+          "Count": 1,
+          "Name": "Kraken"
+        }, {
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Tellurium"
+        }, {
+          "Type": "Resource",
+          "Count": 4800,
+          "Name": "Cryotic"
+        }, {
+          "Type": "Resource",
+          "Count": 3600,
+          "Name": "Plastids"
+        }],
+        "Time": 24
+      },
+      "Traits": ["Grineer"],
+      "Introduced": "[[Update 17#Update 17.0|Update 17.0]]",
+      "Name": "Kulstar",
+      "Accuracy": 26.7,
+      "Users": ["[[Darek Draga]]"]
+    },
+    "Vasto Prime": {
+      "Magazine": 6,
+      "Disposition": 5,
+      "Mastery": 10,
+      "Class": "Pistol",
+      "Type": "Secondary",
+      "Image": "PrimeVasto.png",
+      "NormalAttack": {
+        "FireRate": 5.42,
+        "ShotType": "Hit-Scan",
+        "CritChance": 0.22,
+        "StatusChance": 0.22,
+        "Damage": {
+          "Puncture": 9.9,
+          "Impact": 9.9,
+          "Slash": 46.2
+        },
+        "CritMultiplier": 2.4
+      },
+      "Trigger": "Semi-Auto",
+      "Reload": 1,
+      "Polarities": ["V", "V"],
+      "Cost": {
+        "Credits": 15000,
+        "Parts": [{
+          "Type": "PrimePart",
+          "Count": 1,
+          "Name": "Barrel"
+        }, {
+          "Type": "PrimePart",
+          "Count": 1,
+          "Name": "Receiver"
+        }, {
+          "Type": "Resource",
+          "Count": 10,
+          "Name": "Orokin Cell"
+        }],
+        "Rush": 50,
+        "Time": 12
+      },
+      "Traits": ["Prime", "Vaulted"],
+      "Conclave": true,
+      "Name": "Vasto Prime",
+      "Accuracy": 16,
+      "Introduced": "[[Update 15#Update 15.7|Update 15.7]]",
+      "Family": "Vasto"
+    },
+    "Twin Vipers": {
+      "Magazine": 28,
+      "Disposition": 5,
+      "Mastery": 5,
+      "Class": "Dual Pistols",
+      "Type": "Secondary",
+      "Image": "Viper, dual.png",
+      "NormalAttack": {
+        "FireRate": 25,
+        "ShotType": "Hit-Scan",
+        "CritChance": 0.15,
+        "StatusChance": 0.11,
+        "Damage": {
+          "Puncture": 1.7,
+          "Impact": 10.2,
+          "Slash": 5.1
+        },
+        "CritMultiplier": 1.5
+      },
+      "Trigger": "Auto",
+      "Reload": 2,
+      "MaxAmmo": 420,
+      "Polarities": ["Bar"],
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 225,
+        "BPCost": 15000,
+        "Rush": 25,
+        "Parts": [{
+          "Type": "Weapon",
+          "Count": 1,
+          "Name": "Viper"
+        }, {
+          "Type": "Weapon",
+          "Count": 1,
+          "Name": "Viper"
+        }, {
+          "Type": "Resource",
+          "Count": 1,
+          "Name": "Orokin Cell"
+        }],
+        "Time": 12
+      },
+      "Traits": ["Grineer"],
+      "Conclave": true,
+      "Name": "Twin Vipers",
+      "Accuracy": 15.4,
+      "dual": "[[Update 7#Update 7.7.3|Update 7.7.3]]",
+      "Family": "Twin Vipers"
+    },
+    "Prisma Veritux": {
+      "Polarities": ["D"],
+      "WallAttack": 300,
+      "Mastery": 0,
+      "Traits": ["Tenno", "Prisma"],
+      "Introduced": "[[Update 15#Update 15.13.3|Update 15.13.3]]",
+      "Image": "PrismaVerituxFix.png",
+      "NormalAttack": {
+        "FireRate": 1,
+        "CritChance": 0.15,
+        "StatusChance": 0.2,
+        "Damage": {
+          "Puncture": 45,
+          "Impact": 45,
+          "Slash": 210
+        },
+        "CritMultiplier": 2
+      },
+      "Name": "Prisma Veritux",
+      "Type": "Arch-Melee",
+      "SlideAttack": 643,
+      "JumpAttack": 300,
+      "Family": "Veritux"
+    },
+    "Quanta Vandal": {
+      "Magazine": 80,
+      "Disposition": 2,
+      "Mastery": 10,
+      "Class": "Rifle",
+      "Type": "Primary",
+      "Image": "QuantaVandal.png",
+      "NormalAttack": {
+        "ShotType": "Discharge",
+        "Range": 50,
+        "FireRate": 12,
+        "AmmoCost": 0.5,
+        "CritChance": 0.22,
+        "StatusChance": 0.3,
+        "Damage": {
+          "Electricity": 26
+        },
+        "CritMultiplier": 2.4
+      },
+      "Trigger": "Held",
+      "SecondaryAreaAttack": {
+        "StatusChance": 0.26,
+        "FireRate": 4,
+        "CritMultiplier": 1.5,
+        "Accuracy": 25,
+        "AttackName": "Cube (Shot by player)",
+        "Damage": {
+          "Blast": 600
+        },
+        "CritChance": 0.05
+      },
+      "Reload": 1.8,
+      "AreaAttack": {
+        "Range": 15,
+        "FireRate": 4,
+        "CritMultiplier": 1.5,
+        "Damage": {
+          "Blast": 250
+        },
+        "ShotSpeed": "???",
+        "ShotType": "Projectile",
+        "AmmoCost": 10,
+        "Accuracy": 25,
+        "AttackName": "Cube (Hits enemy)",
+        "StatusChance": 0.26,
+        "CritChance": 0.05
+      },
+      "MaxAmmo": 560,
+      "Polarities": ["V"],
+      "Traits": ["Corpus", "Vandal"],
+      "Introduced": "[[Update 16#Update 16.4|Update 16.4]]",
+      "Name": "Quanta Vandal",
+      "Accuracy": 100,
+      "Family": "Quanta"
+    },
+    "Fluctus": {
+      "Magazine": 25,
+      "Polarities": ["Bar"],
+      "Cost": {
+        "Credits": 25000,
+        "MarketCost": 210,
+        "BPCost": 15000,
+        "Rush": 50,
+        "Parts": [{
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Barrel"
+        }, {
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Receiver"
+        }, {
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Stock"
+        }, {
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Argon Crystal"
+        }],
+        "Time": 12
+      },
+      "Type": "Arch-Gun",
+      "Mastery": 0,
+      "Traits": ["Tenno"],
+      "Introduced": "[[Update 15#Update 15.7.2|Update 15.7.2]]",
+      "Image": "ArchRocketCrossbow.png",
+      "NormalAttack": {
+        "ShotSpeed": "???",
+        "Range": 450,
+        "FireRate": 5,
+        "ShotType": "Projectile",
+        "CritChance": 0.15,
+        "StatusChance": 0.1,
+        "Damage": {
+          "Puncture": 20,
+          "Impact": 40,
+          "Slash": 140
+        },
+        "CritMultiplier": 2
+      },
+      "Name": "Fluctus",
+      "Accuracy": 100,
+      "Reload": 10,
+      "Trigger": "Semi-Auto",
+      "ReloadStyle": "Regenerate"
+    },
+    "Vulkar": {
+      "Magazine": 6,
+      "Disposition": 5,
+      "Mastery": 3,
+      "Class": "Sniper Rifle",
+      "Type": "Primary",
+      "Image": "Vulkar.png",
+      "NormalAttack": {
+        "ShotType": "Hit-Scan",
+        "PunchThrough": 1,
+        "FireRate": 1.5,
+        "Falloff": {
+          "StartRange": 400,
+          "EndRange": 600
+        },
+        "CritChance": 0.2,
+        "StatusChance": 0.25,
+        "Damage": {
+          "Puncture": 33.8,
+          "Impact": 180,
+          "Slash": 11.2
+        },
+        "CritMultiplier": 2
+      },
+      "Trigger": "Semi-Auto",
+      "Reload": 3,
+      "MaxAmmo": 72,
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 225,
+        "BPCost": 20000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 5,
+          "Name": "Morphics"
+        }, {
+          "Type": "Resource",
+          "Count": 800,
+          "Name": "Circuits"
+        }, {
+          "Type": "Resource",
+          "Count": 1200,
+          "Name": "Salvage"
+        }, {
+          "Type": "Resource",
+          "Count": 800,
+          "Name": "Plastids"
+        }],
+        "Time": 12
+      },
+      "Zoom": ["2.5x zoom (+35% Headshot Damage)", "4x zoom (+55% Headshot Damage)", "8x zoom (+70% Headshot Damage)"],
+      "Traits": ["Grineer"],
+      "Conclave": true,
+      "Users": ["[[Ballista]]", "[[Executioners/Harkonar|Executioner Harkonar]]"],
+      "SniperComboReset": 2,
+      "Name": "Vulkar",
+      "Accuracy": 13.3,
+      "SniperComboMin": 2,
+      "Introduced": "[[Update 8#Update 8.0|Update 8.0]]",
+      "Family": "Vulkar"
+    },
+    "Prisma Dual Cleavers": {
+      "Disposition": 3,
+      "StancePolarity": "Bar",
+      "Mastery": 3,
+      "Class": "Dual Swords",
+      "Type": "Melee",
+      "Image": "PrismaDualCleavers.png",
+      "NormalAttack": {
+        "FireRate": 1,
+        "CritChance": 0.25,
+        "StatusChance": 0.25,
+        "Damage": {
+          "Puncture": 3.5,
+          "Impact": 3.5,
+          "Slash": 28
+        },
+        "CritMultiplier": 3
+      },
+      "Polarities": ["V"],
+      "Traits": ["Prisma", "Baro"],
+      "Conclave": true,
+      "BlockResist": 0.85,
+      "WallAttack": 140,
+      "Name": "Prisma Dual Cleavers",
+      "JumpAttack": 70,
+      "SlideAttack": 210,
+      "Introduced": "[[Update 16#Update 16.11.3|Update 16.11.3]]",
+      "Family": "Dual Cleavers"
+    },
+    "Karak": {
+      "Magazine": 30,
+      "Disposition": 4,
+      "Mastery": 1,
+      "Class": "Rifle",
+      "Type": "Primary",
+      "Image": "GrineerM16Rifle.png",
+      "NormalAttack": {
+        "FireRate": 11.67,
+        "ShotType": "Hit-Scan",
+        "CritChance": 0.09,
+        "StatusChance": 0.15,
+        "Damage": {
+          "Puncture": 8.7,
+          "Impact": 13,
+          "Slash": 7.3
+        },
+        "CritMultiplier": 1.5
+      },
+      "Trigger": "Auto",
+      "Reload": 2,
+      "MaxAmmo": 540,
+      "Polarities": ["V"],
+      "Cost": {
+        "Credits": 30000,
+        "MarketCost": 125,
+        "BPCost": 30000,
+        "Rush": 40,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Neurodes"
+        }, {
+          "Type": "Resource",
+          "Count": 400,
+          "Name": "Alloy Plate"
+        }, {
+          "Type": "Resource",
+          "Count": 900,
+          "Name": "Salvage"
+        }, {
+          "Type": "Resource",
+          "Count": 100,
+          "Name": "Polymer Bundle"
+        }],
+        "Time": 24
+      },
+      "Traits": ["Grineer"],
+      "Conclave": true,
+      "Name": "Karak",
+      "Accuracy": 28.6,
+      "Users": ["[[Elite Lancer|Frontier Elite Lancer]]"],
+      "Introduced": "[[Update 11#Update 11.5|Update 11.5]]",
+      "Family": "Karak"
+    },
+    "Mire": {
+      "Disposition": 5,
+      "StancePolarity": "V",
+      "JumpElement": "Toxin",
+      "Class": "Sword",
+      "Type": "Melee",
+      "Image": "MireInfestedSword.png",
+      "NormalAttack": {
+        "FireRate": 1.08,
+        "CritChance": 0.05,
+        "StatusChance": 0.1,
+        "Damage": {
+          "Puncture": 5.25,
+          "Impact": 5.25,
+          "Slash": 24.5
+        },
+        "CritMultiplier": 1.5
+      },
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 150,
+        "BPCost": 15000,
+        "Rush": 45,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Neural Sensors"
+        }, {
+          "Type": "Resource",
+          "Count": 1000,
+          "Name": "Ferrite"
+        }, {
+          "Type": "Resource",
+          "Count": 1500,
+          "Name": "Nano Spores"
+        }, {
+          "Type": "Resource",
+          "Count": 2000,
+          "Name": "Alloy Plate"
+        }],
+        "Time": 12
+      },
+      "WallAttack": 140,
+      "Traits": ["Infested"],
+      "Conclave": true,
+      "BlockResist": 0.6,
+      "Mastery": 0,
+      "FinisherDamage": 75,
+      "Name": "Mire",
+      "SlideAttack": 75,
+      "Introduced": "[[Update 7#Update 7.7.2|Update 7.7.2]]",
+      "JumpAttack": 70
+    },
+    "Furax": {
+      "Disposition": 5,
+      "StancePolarity": "D",
+      "Mastery": 0,
+      "Class": "Fist",
+      "Type": "Melee",
+      "Image": "Furax.png",
+      "NormalAttack": {
+        "FireRate": 1,
+        "CritChance": 0.2,
+        "StatusChance": 0.1,
+        "Damage": {
+          "Puncture": 5.3,
+          "Impact": 24.5,
+          "Slash": 5.2
+        },
+        "CritMultiplier": 2
+      },
+      "Cost": {
+        "Credits": 30000,
+        "MarketCost": 125,
+        "BPCost": 15000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 1000,
+          "Name": "Nano Spores"
+        }, {
+          "Type": "Resource",
+          "Count": 900,
+          "Name": "Salvage"
+        }, {
+          "Type": "Resource",
+          "Count": 600,
+          "Name": "Ferrite"
+        }, {
+          "Type": "Resource",
+          "Count": 500,
+          "Name": "Alloy Plate"
+        }],
+        "Time": 12
+      },
+      "WallAttack": 105,
+      "Traits": ["Grineer"],
+      "Conclave": true,
+      "BlockResist": 0.6,
+      "Users": ["[[Powerfist]] (single [[Furax]])"],
+      "FinisherDamage": 30,
+      "Name": "Furax",
+      "SlideAttack": 105,
+      "JumpAttack": 70,
+      "Family": "Furax"
+    },
+    "Carmine Penta": {
+      "Magazine": 10,
+      "Type": "Primary",
+      "MaxAmmo": 20,
+      "Disposition": 4,
+      "Trigger": "Active",
+      "SecondaryAttack": {
+        "Radius": 5,
+        "AttackName": "Grenade Detonation",
+        "Damage": {
+          "Blast": 350
+        },
+        "Trigger": "Detonate"
+      },
+      "Mastery": 6,
+      "Class": "Launcher",
+      "Conclave": false,
+      "Image": "PentaLoginRewardSkin.png",
+      "NormalAttack": {
+        "ShotSpeed": 20,
+        "ShotType": "Projectile",
+        "FireRate": 2.7,
+        "StatusChance": 0.1,
+        "CritChance": 0.1,
+        "AttackName": "Grenade Impact",
+        "Damage": {
+          "Impact": 75,
+          "Blast": 350
+        },
+        "CritMultiplier": 2
+      },
+      "Name": "Carmine Penta",
+      "Accuracy": 100,
+      "Reload": 2.5,
+      "NoiseLevel": "Silent",
+      "Family": "Penta"
+    },
+    "Nikana": {
+      "Disposition": 1,
+      "StancePolarity": "V",
+      "Mastery": 4,
+      "Class": "Nikana",
+      "Type": "Melee",
+      "Image": "Katana.png",
+      "NormalAttack": {
+        "FireRate": 0.917,
+        "CritChance": 0.1,
+        "StatusChance": 0.1,
+        "Damage": {
+          "Puncture": 4.5,
+          "Impact": 2.25,
+          "Slash": 38.25
+        },
+        "CritMultiplier": 2
+      },
+      "Polarities": ["V", "D"],
+      "Cost": {
+        "Credits": 5000,
+        "MarketCost": 275,
+        "BPCost": 15000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 3,
+          "Name": "Argon Crystal"
+        }, {
+          "Type": "Resource",
+          "Count": 75,
+          "Name": "Oxium"
+        }, {
+          "Type": "Resource",
+          "Count": 200,
+          "Name": "Alloy Plate"
+        }, {
+          "Type": "Resource",
+          "Count": 1,
+          "Name": "Forma"
+        }],
+        "Time": 12
+      },
+      "Traits": ["Tenno"],
+      "Conclave": true,
+      "BlockResist": 0.6,
+      "WallAttack": 96,
+      "Name": "Nikana",
+      "JumpAttack": 90,
+      "SlideAttack": 96,
+      "Introduced": "[[Update 13#Update 13.0|Update 13.0]]",
+      "Family": "Nikana"
+    },
+    "Onorix": {
+      "Polarities": ["V"],
+      "Cost": {
+        "Credits": 25000,
+        "MarketCost": 190,
+        "BPCost": 35000,
+        "Rush": 50,
+        "Parts": [{
+          "Type": "Item",
+          "Count": 2,
+          "Name": "Blade"
+        }, {
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Handle"
+        }, {
+          "Type": "Resource",
+          "Count": 3,
+          "Name": "Neurodes"
+        }],
+        "Time": 12
+      },
+      "Mastery": 0,
+      "Traits": ["Tenno"],
+      "Introduced": "[[Update 15#Update 15.0|Update 15.0]]",
+      "Image": "Archaxe.png",
+      "NormalAttack": {
+        "FireRate": 1,
+        "CritChance": 0.15,
+        "StatusChance": 0.05,
+        "Damage": {
+          "Puncture": 58,
+          "Impact": 87,
+          "Slash": 145
+        },
+        "CritMultiplier": 1.3
+      },
+      "Name": "Onorix",
+      "WallAttack": 290,
+      "SlideAttack": 621,
+      "Type": "Arch-Melee",
+      "JumpAttack": 290
+    },
+    "Phaedra": {
+      "Magazine": 250,
+      "Polarities": ["V"],
+      "Cost": {
+        "Credits": 45000,
+        "MarketCost": 220,
+        "BPCost": 35000,
+        "Rush": 50,
+        "Parts": [{
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Barrel"
+        }, {
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Receiver"
+        }, {
+          "Type": "Item",
+          "Count": 1,
+          "Name": "Stock"
+        }, {
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Tellurium"
+        }],
+        "Time": 12
+      },
+      "Type": "Arch-Gun",
+      "Mastery": 0,
+      "Traits": ["Tenno"],
+      "Introduced": "[[Update 17#Update 17.5|Update 17.5]]",
+      "Image": "ArchLongRifle.png",
+      "NormalAttack": {
+        "FireRate": 18.75,
+        "ShotType": "Hit-scan",
+        "CritChance": 0.1,
+        "StatusChance": 0.25,
+        "Damage": {
+          "Puncture": 29.25,
+          "Impact": 11.25,
+          "Slash": 4.5
+        },
+        "CritMultiplier": 2
+      },
+      "Name": "Phaedra",
+      "Accuracy": 11.8,
+      "Reload": 50,
+      "Trigger": "Auto-Spool",
+      "ReloadStyle": "Regenerate"
+    },
+    "Akzani": {
+      "Magazine": 100,
+      "Disposition": 5,
+      "Mastery": 4,
+      "Class": "Dual Pistols",
+      "Type": "Secondary",
+      "Image": "Akzani.png",
+      "NormalAttack": {
+        "FireRate": 20,
+        "ShotType": "Hit-Scan",
+        "CritChance": 0.14,
+        "StatusChance": 0.14,
+        "Damage": {
+          "Puncture": 8.4,
+          "Impact": 1.8,
+          "Slash": 1.8
+        },
+        "CritMultiplier": 2
+      },
+      "Trigger": "Auto",
+      "Reload": 2,
+      "MaxAmmo": 400,
+      "Polarities": ["Bar"],
+      "Cost": {
+        "Credits": 20000,
+        "MarketCost": 225,
+        "BPCost": 20000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 1500,
+          "Name": "Salvage"
+        }, {
+          "Type": "Resource",
+          "Count": 1000,
+          "Name": "Polymer Bundle"
+        }, {
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Morphics"
+        }, {
+          "Type": "Resource",
+          "Count": 2,
+          "Name": "Argon Crystal"
+        }],
+        "Time": 12
+      },
+      "Traits": ["Tenno"],
+      "Conclave": true,
+      "Name": "Akzani",
+      "Accuracy": 16.7,
+      "Introduced": "[[Update 14#Update 14.0|Update 14.0]]"
+    },
+    "Mutalist Quanta": {
+      "Magazine": 60,
+      "Disposition": 5,
+      "Mastery": 2,
+      "Class": "Rifle",
+      "SecondaryAttack": {
+        "CritMultiplier": 1.5,
+        "StatusChance": 0,
+        "FireRate": 10,
+        "CritChance": 0.05,
+        "Accuracy": 25,
+        "Reload": 3,
+        "Damage": {
+          "Electricity": 100
+        },
+        "AttackName": "Orb Explosion"
+      },
+      "Image": "InfCrpShockSwarm.png",
+      "NormalAttack": {
+        "FireRate": 10,
+        "CritMultiplier": 1.5,
+        "Damage": {
+          "Puncture": 15,
+          "Impact": 2.5,
+          "Slash": 7.5
+        },
+        "ShotSpeed": 100,
+        "ShotType": "Projectile",
+        "Accuracy": 100,
+        "Reload": 3,
+        "StatusChance": 0.15,
+        "CritChance": 0.025
+      },
+      "Trigger": "Auto",
+      "AreaAttack": {
+        "ShotSpeed": "???",
+        "AmmoCost": 15,
+        "StatusChance": 1,
+        "AttackName": "Infested Orb",
+        "Damage": {
+          "Radiation": 20
+        },
+        "ShotType": "Projectile"
+      },
+      "MaxAmmo": 540,
+      "Polarities": ["D"],
+      "Cost": {
+        "Credits": 30000,
+        "MarketCost": 225,
+        "BPCost": 50000,
+        "Rush": 35,
+        "Parts": [{
+          "Type": "Resource",
+          "Count": 5,
+          "Name": "Mutagen Mass"
+        }, {
+          "Type": "Resource",
+          "Count": 15000,
+          "Name": "Nano Spores"
+        }, {
+          "Type": "Resource",
+          "Count": 1200,
+          "Name": "Circuits"
+        }, {
+          "Type": "Resource",
+          "Count": 1,
+          "Name": "Forma"
+        }],
+        "Time": 24
+      },
+      "Traits": ["Infested"],
+      "Conclave": false,
+      "Name": "Mutalist Quanta",
+      "Type": "Primary",
+      "Introduced": "[[Update 13#Update 13.8|Update 13.

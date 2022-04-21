@@ -1,0 +1,68 @@
+damageResistances = {
+  "Impact": [-.25, -.25, 0, 0, 0, 0, .25, 0, 0, .5, .25, 0, 0],
+  "Puncture": [0, 0, 0, 0, 0, .25, 0, .25, 0, -.2, -.5, .5, .15],
+  "Slash": [.25, .25, .15, .25, .5, 0, 0, -.25, 0, 0, 0, -.15, -.50],
+  "Cold": [0, 0, -.25, 0, -.5, .25, 0, 0, 0, .5, 0, 0, .25],
+  "Electricity": [0, 0, 0, 0, 0, 0, .5, .5, 0, 0, 0, 0, -.5],
+  "Heat": [0, .25, 0, .25, .5, 0, 0, 0, 0, 0, -.5, 0, 0],
+  "Toxin": [.5, 0, -.5, 0, 0, 0, -.25, -.25, 0, 0, 0, .25, 0],
+  "Blast": [0, 0, .5, 0, 0, -.5, .75, 0, 0, 0, 0, -.25, 0],
+  "Corrosive": [0, 0, .75, 0, 0, 0, 0, 0, 0, 0, -.5, .75, 0],
+  "Gas": [-.25, -.5, 0, .75, .5, 0, 0, 0, 0, 0, 0, 0, 0],
+  "Magnetic": [0, 0, 0, 0, 0, 0, 0, 0, 0, .75, .75, 0, -.5],
+  "Radiation": [0, 0, -.75, -.5, 0, .5, 0, .25, 0, -.25, 0, 0, .75],
+  "Viral": [.5, .75, 0, -.5, 0, 0, -.25, 0, 0, 0, 0, 0, 0]
+}
+
+targetTypes = ["Flesh", "Cloned Flesh", "Fossil", "Infested", "Infested Flesh", "Sinew", "Machine", "Robotic", "Object", "Shield", "Proto Shield", "Ferrite Armor", "Alloy Armor"]
+
+targetData = {
+  "Elite Lancer": {
+    "Name": "Elite Lancer",
+    "BaseLevel": "15",
+    "HealthType": "Cloned Flesh",
+    "HealthValue": 150,
+    "ArmorType": "Alloy Armor",
+    "ArmorValue": 200,
+    "ShieldType": "None",
+    "ShieldValue": 0,
+    "HeadMultiplier": 2,
+    "Faction": "Grineer"
+  },
+  "Elite Crewman": {
+    "Name": "Elite Crewman",
+    "BaseLevel": "15",
+    "HealthType": "Flesh",
+    "HealthValue": 100,
+    "ArmorType": "None",
+    "ArmorValue": 0,
+    "ShieldType": "Shield",
+    "ShieldValue": 200,
+    "HeadMultiplier": 2,
+    "Faction": "Corpus"
+  },
+  "Charger": {
+    "Name": "Charger",
+    "BaseLevel": "1",
+    "HealthType": "Infested",
+    "HealthValue": 80,
+    "ArmorType": "None",
+    "ArmorValue": 0,
+    "ShieldType": "None",
+    "ShieldValue": 0,
+    "HeadMultiplier": 2,
+    "Faction": "Infested"
+  },
+  "Oxium Osprey": {
+    "Name": "Oxium Osprey",
+    "BaseLevel": "5",
+    "HealthType": "Robotic",
+    "HealthValue": 750,
+    "ArmorType": "Ferrite Armor",
+    "ArmorValue": 40,
+    "ShieldType": "Shield",
+    "ShieldValue": 150,
+    "HeadMultiplier": 2,
+    "Faction": "Corpus"
+  },
+}

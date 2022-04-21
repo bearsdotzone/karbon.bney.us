@@ -1,0 +1,2466 @@
+modData = {
+  "ArchGun": {
+    "ammochain": {
+      "ModName": "Ammo Chain",
+      "ModID": "ammochain",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Ammo Maximum",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "AmmoMaxMod",
+          "GainPerRank": 0.05
+        }
+      ]
+    },
+    "automatictrigger": {
+      "ModName": "Automatic Trigger",
+      "ModID": "automatictrigger",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Fire Rate",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 10,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "FireRateMod",
+          "GainPerRank": 0.1
+        }
+      ]
+    },
+    "chargedbullets": {
+      "ModName": "Charged Bullets",
+      "ModID": "chargedbullets",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Electricity +$2% Status Chance",
+      "ModType": "ARCHGUN",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "ElectricityMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "combustionrounds": {
+      "ModName": "Combustion Rounds",
+      "ModID": "combustionrounds",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Heat",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "HeatMod",
+          "GainPerRank": 0.2
+      }]
+    },
+    "cometblast": {
+      "ModName": "Comet Blast",
+      "ModID": "cometblast",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Impact",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "ImpactMod",
+          "GainPerRank": 0.15
+      }]
+    },
+    "criticalfocus": {
+      "ModName": "Critical Focus",
+      "ModID": "criticalfocus",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Critical Chance and Damage when Aiming",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "CritChanceMod",
+          "GainPerRank": 0.1
+        },
+        {
+          "Property": "CritMultiplierMod",
+          "GainPerRank": 0.1
+        }
+      ]
+    },
+    "dualrounds": {
+      "ModName": "Dual Rounds",
+      "ModID": "dualrounds",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Multishot",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "dualrounds",
+      "Effects": [{
+          "Property": "MultishotMod",
+          "GainPerRank": 0.1
+      }]
+    },
+    "electrifiedbarrel": {
+      "ModName": "Electrified Barrel",
+      "ModID": "electrifiedbarrel",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Electricity",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "ElectricityMod",
+          "GainPerRank": 0.2
+      }]
+    },	
+    "hollowedbullets": {
+      "ModName": "Hollowed Bullets",
+      "ModID": "hollowedbullets",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Critical Damage",
+      "ModType": "ARCHGUN",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "CritMultiplierMod",
+          "GainPerRank": 0.2
+      }]
+    },
+    "hypothermicshell": {
+      "ModName": "Hypothermic Shell",
+      "ModID": "hypothermicshell",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Cold +$2% Status Chance",
+      "ModType": "ARCHGUN",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "ColdMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "magazineextension": {
+      "ModName": "Magazine Extension",
+      "ModID": "magazineextension",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Magazine Capacity",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "MagazineMod",
+          "GainPerRank": 0.1
+      }]
+    },
+    "magmachamber": {
+      "ModName": "Magma Chamber",
+      "ModID": "magmachamber",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Heat +$2% Status Chance",
+      "ModType": "ARCHGUN",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "HeatMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "markedtarget": {
+      "ModName": "Marked Target",
+      "ModID": "markedtarget",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Status Chance when Aiming",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.2
+      }]
+    },
+    "modifiedmunitions": {
+      "ModName": "Modified Munitions",
+      "ModID": "modifiedmunitions",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Status Chance",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "D",
+      "Effects": [{
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.1
+      }]
+    },	
+    "parallaxscope": {
+      "ModName": "Parallax Scope",
+      "ModID": "parallaxscope",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Critical Chance",
+      "ModType": "ARCHGUN",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "CritChanceMod",
+          "GainPerRank": 0.25
+      }]
+    },	
+    "polarmagazine": {
+      "ModName": "Polar Magazine",
+      "ModID": "polarmagazine",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Cold",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "D",
+      "Effects": [{
+          "Property": "ColdMod",
+          "GainPerRank": 0.2
+      }]
+    },
+    "quasardrill": {
+      "ModName": "Quasar Drill",
+      "ModID": "quasardrill",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Puncture",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "PunctureMod",
+          "GainPerRank": 0.15
+      }]
+    },
+    "quickreload": {
+      "ModName": "Quick Reload",
+      "ModID": "quickreload",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Reload Speed",
+      "ModType": "ARCHGUN",
+      "Ranks": 4,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "ReloadTimeMod",
+          "GainPerRank": 0.25
+      }]
+    },
+    "rubedolinedbarrel": {
+      "ModName": "Rubedo-Lined Barrel",
+      "ModID": "rubedolinedbarrel",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Damage",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "DamageMod",
+          "GainPerRank": 0.1666666666667
+      }]
+    },
+    "sabotrounds": {
+      "ModName": "Sabot Rounds",
+      "ModID": "sabotrounds",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Damage +X Punch Through",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 10,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "DamageMod",
+          "GainPerRank": 0.1
+        }
+      ]
+    },
+    "venomousclip": {
+      "ModName": "Venemous Clip",
+      "ModID": "venomousclip",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Toxin",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "D",
+      "Effects": [{
+          "Property": "ToxinMod",
+          "GainPerRank": 0.2
+      }]
+    },
+    "zodiacshred": {
+      "ModName": "Zodiac Shred",
+      "ModID": "zodiacshred",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Slash",
+      "ModType": "ARCHGUN",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "SlashMod",
+          "GainPerRank": 0.15
+      }]
+    },
+  },
+  "Secondary": {
+    "anemicagility": {
+      "ModName": "Anemic Agility",
+      "ModID": "anemicagility",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedFireRateDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Fire Rate $2% Damage",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "FireRateMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "DamageMod",
+          "GainPerRank": -0.025
+        }
+      ]
+    },
+    "augurpact": {
+      "ModName": "Augur Pact",
+      "ModID": "augurpact",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Sets//Augur//AugurPact.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Damage",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "DamageMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "barreldiffusion": {
+      "ModName": "Barrel Diffusion",
+      "ModID": "barreldiffusion",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolFireIterationsMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Multishot",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "MultishotMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "bore": {
+      "ModName": "Bore",
+      "ModID": "bore",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//EventPunctureDamageModPistol.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Puncture",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "PunctureMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "concussionrounds": {
+      "ModName": "Concussion Rounds",
+      "ModID": "concussionrounds",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//ImpactDamagePistolMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Impact",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ImpactMod",
+        "GainPerRank": 0.10
+      }]
+    },
+    "convulsion": {
+      "ModName": "Convulsion",
+      "ModID": "convulsion",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolElectricityDamageMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Electricity",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ElectricityMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "creepingbullseye": {
+      "ModName": "Creeping Bullseye",
+      "ModID": "creepingbullseye",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedCritChanceFireRatePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Critical Chance $2% Fire Rate",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "CritChanceMod",
+          "GainPerRank": 0.08
+        },
+        {
+          "Property": "FireRateMod",
+          "GainPerRank": -0.06
+        }
+      ]
+    },
+    "deepfreeze": {
+      "ModName": "Deep Freeze",
+      "ModID": "deepfreeze",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolFreezeDamageMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Cold",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "D",
+      "Effects": [{
+        "Property": "ColdMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "embeddedcatalyzer": {
+      "ModName": "Embedded Catalyzer",
+      "ModID": "embeddedcatalyzer",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//StatusChanceWhileAiming.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "On Ability Cast: +$1% Status Chance when Aiming for 9s.",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "StatusChanceMod",
+        "GainPerRank": 0.15,
+        "Condition": "ON ABILITY CAST"
+      }]
+    },
+    "expelcorpus": {
+      "ModName": "Expel Corpus",
+      "ModID": "expelcorpus",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolDamageCorpus.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Damage to Corpus",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CorpusFactionMod",
+        "GainPerRank": 0.05,
+        "Condition": "CORPUS"
+      }]
+    },
+    "expelgrineer": {
+      "ModName": "Expel Grineer",
+      "ModID": "expelgrineer",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolDamageGrineer.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Damage to Grineer",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "GrineerFactionMod",
+        "GainPerRank": 0.05,
+        "Condition": "GRINEER"
+      }]
+    },
+    "expelinfested": {
+      "ModName": "Expel Infested",
+      "ModID": "expelinfested",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolDamageInfested.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Damage to Infested",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "InfestedFactionMod",
+        "GainPerRank": 0.05,
+        "Condition": "INFESTED"
+      }]
+    },
+    "frostbite": {
+      "ModName": "Frostbite",
+      "ModID": "frostbite",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//IceEventPistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Cold +$2% Status Chance",
+      "ModType": "PISTOL",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "ColdMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "gunslinger": {
+      "ModName": "Gunslinger",
+      "ModID": "gunslinger",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolFireRateMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Fire Rate",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "FireRateMod",
+        "GainPerRank": 0.12
+      }]
+    },
+    "heatedcharge": {
+      "ModName": "Heated Charge",
+      "ModID": "heatedcharge",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolFireDamageMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Heat",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "HeatMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "hollowpoint": {
+      "ModName": "Hollow Point",
+      "ModID": "hollowpoint",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedCritDmgForDmgMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Critical Damage $2% Damage",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "CritMultiplierMod",
+          "GainPerRank": 0.10
+        },
+        {
+          "Property": "DamageMod",
+          "GainPerRank": -0.025
+        }
+      ]
+    },
+    "hornetstrike": {
+      "ModName": "Hornet Strike",
+      "ModID": "hornetstrike",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolDamageAmountMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Damage",
+      "ModType": "PISTOL",
+      "Ranks": 11,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "DamageMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "hydrauliccrosshairs": {
+      "ModName": "Hydraulic Crosshairs",
+      "ModID": "hydrauliccrosshairs",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CritChanceWhileAiming.jpeg",
+      "Rarity": "Common",
+      "Description": "On Headshot: +$1% Critical Chance when Aiming for 9s.",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritChanceMod",
+        "GainPerRank": 0.225,
+        "Condition": "ON HEADSHOT"
+      }]
+    },
+    "icestorm": {
+      "ModName": "Ice Storm",
+      "ModID": "icestorm",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//DoubleMods//PistolIceStormMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Magazine Capacity +$2% Cold",
+      "ModType": "PISTOL",
+      "Ranks": 4,
+      "BaseCost": 6,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "MagazineMod",
+          "GainPerRank": 0.10
+        },
+        {
+          "Property": "ColdMod",
+          "GainPerRank": 0.10
+        }
+      ]
+    },
+    "jolt": {
+      "ModName": "Jolt",
+      "ModID": "jolt",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//ElectEventPistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Electricity +$2% Status Chance",
+      "ModType": "PISTOL",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "ElectricityMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "lethaltorrent": {
+      "ModName": "Lethal Torrent",
+      "ModID": "lethaltorrent",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//Grinder.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Fire Rate +$2% Multishot",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "FireRateMod",
+          "GainPerRank": 0.10
+        },
+        {
+          "Property": "MultishotMod",
+          "GainPerRank": 0.10
+        }
+      ]
+    },
+    "magnumforce": {
+      "ModName": "Magnum Force",
+      "ModID": "magnumforce",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedDmgForRecoilMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Damage $2% Accuracy",
+      "ModType": "PISTOL",
+      "Ranks": 11,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "DamageMod",
+          "GainPerRank": 0.06
+        },
+        {
+          "Property": "AccuracyMod",
+          "GainPerRank": -0.03
+        }
+      ]
+    },
+    "maim": {
+      "ModName": "Maim",
+      "ModID": "maim",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//EventSlashDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Slash",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "SlashMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "noreturn": {
+      "ModName": "No Return",
+      "ModID": "noreturn",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolArmorPiercingDamageMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Puncture",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "PunctureMod",
+        "GainPerRank": 0.10
+      }]
+    },
+    "pathogenrounds": {
+      "ModName": "Pathogen Rounds",
+      "ModID": "pathogenrounds",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PoisonDamagePistolMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Toxin",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ToxinMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "pistolgambit": {
+      "ModName": "Pistol Gambit",
+      "ModID": "pistolgambit",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolCritChanceMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Critical Chance",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritChanceMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "pistolpestilence": {
+      "ModName": "Pistol Pestilence",
+      "ModID": "pistolpestilence",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PoisonEventPistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Toxin +$2% Status Chance",
+      "ModType": "PISTOL",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "ToxinMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "pressurizedmagazine": {
+      "ModName": "Pressurized Magazine",
+      "ModID": "pressurizedmagazine",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//FireRateWhileAiming.jpeg",
+      "Rarity": "Rare",
+      "Description": "On Reload: +$1% Fire Rate when Aiming for 9s.",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "FireRateMod",
+        "GainPerRank": 0.15,
+        "Condition": "ON RELOAD"
+      }]
+    },
+    "primedheatedcharge": {
+      "ModName": "Primed Heated Charge",
+      "ModID": "primedheatedcharge",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolFireDamageMod.jpeg",
+      "Rarity": "Legendary",
+      "Description": "+$1% Heat",
+      "ModType": "PISTOL",
+      "Ranks": 11,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "HeatMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "primedpistolgambit": {
+      "ModName": "Primed Pistol Gambit",
+      "ModID": "primedpistolgambit",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolCritChanceMod.jpeg",
+      "Rarity": "Legendary",
+      "Description": "+$1% Critical Chance",
+      "ModType": "PISTOL",
+      "Ranks": 11,
+      "BaseCost": 2,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritChanceMod",
+        "GainPerRank": 0.17
+      }]
+    },
+    "primedslipmagazine": {
+      "ModName": "Primed Slip Magazine",
+      "ModID": "primedslipmagazine",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolClipMax.jpeg",
+      "Rarity": "Legendary",
+      "Description": "+$1% Magazine Capacity",
+      "ModType": "PISTOL",
+      "Ranks": 11,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "MagazineMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "primedtargetcracker": {
+      "ModName": "Primed Target Cracker",
+      "ModID": "primedtargetcracker",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolCritDamageMod.jpeg",
+      "Rarity": "Legendary",
+      "Description": "+$1% Critical Damage",
+      "ModType": "PISTOL",
+      "Ranks": 11,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritMultiplierMod",
+        "GainPerRank": 0.10
+      }]
+    },
+    "pummel": {
+      "ModName": "Pummel",
+      "ModID": "pummel",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//EventImpactDamagePistolMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Impact",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ImpactMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "quickdraw": {
+      "ModName": "Quickdraw",
+      "ModID": "quickdraw",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolReloadSpeedMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Reload Speed",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ReloadTimeMod",
+        "GainPerRank": 0.08
+      }]
+    },
+    "razorshot": {
+      "ModName": "Razor Shot",
+      "ModID": "razorshot",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//BleedDamagePistolMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Slash",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "SlashMod",
+        "GainPerRank": 0.10
+      }]
+    },
+    "scorch": {
+      "ModName": "Scorch",
+      "ModID": "scorch",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//DualStatFireProcPistol.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Heat +15% Status Chance",
+      "ModType": "PISTOL",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "HeatMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "sharpenedbullets": {
+      "ModName": "Sharpened Bullets",
+      "ModID": "sharpenedbullets",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CritDamageWhileAiming.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "On Kill: +$1% Critical Damage when Aiming for 9s.",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritMultiplierMod",
+        "GainPerRank": 0.125,
+        "Condition": "ON KILL"
+      }]
+    },
+    "slipmagazine": {
+      "ModName": "Slip Magazine",
+      "ModID": "slipmagazine",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolClipMax.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Magazine Capacity",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "MagazineMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "stunningspeed": {
+      "ModName": "Stunning Speed",
+      "ModID": "stunningspeed",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//DoubleMods//PistolStunningSpeed.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Reload Speed +$2% Status Chance",
+      "ModType": "PISTOL",
+      "Ranks": 4,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "ReloadTimeMod",
+          "GainPerRank": 0.10
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.025
+        }
+      ]
+    },
+    "sureshot": {
+      "ModName": "Sure Shot",
+      "ModID": "sureshot",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//StatusChancePistolMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Status Chance",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "D",
+      "Effects": [{
+        "Property": "StatusChanceMod",
+        "GainPerRank": 0.025
+      }]
+    },
+    "taintedclip": {
+      "ModName": "Tainted Clip",
+      "ModID": "taintedclip",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//CorruptedMaxClipForReloadMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Magazine Capacity $2% Reload Speed",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "MagazineMod",
+          "GainPerRank": 0.10
+        },
+        {
+          "Property": "ReloadTimeMod",
+          "GainPerRank": -0.05
+        }
+      ]
+    },
+    "targetcracker": {
+      "ModName": "Target Cracker",
+      "ModID": "targetcracker",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolCritDamageMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Critical Damage",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritMultiplierMod",
+        "GainPerRank": 0.10
+      }]
+    },
+    "targetingsubsystem": {
+      "ModName": "Targeting Subsystem",
+      "ModID": "targetingsubsystem",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//AccuracyWhileAiming.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "On hit: +$1% Accuracy when Aiming for 9s.",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "AccuracyMod",
+        "GainPerRank": 0.05,
+        "Condition": "ON HIT"
+      }]
+    },
+    "trickmag": {
+      "ModName": "Trick Mag",
+      "ModID": "trickmag",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Pistol//PistolAmmoMaxMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Ammo Maximum",
+      "ModType": "PISTOL",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "AmmoMaxMod",
+        "GainPerRank": 0.15
+      }]
+    }
+  },
+  "Rifle": {
+    "ammodrum": {
+      "ModName": "Ammo Drum",
+      "ModID": "ammodrum",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleAmmoMaxMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Ammo Maximum",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "AmmoMaxMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "argonscope": {
+      "ModName": "Argon Scope",
+      "ModID": "argonscope",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//CritChanceWhileAiming.jpeg",
+      "Rarity": "Rare",
+      "Description": "On Headshot: +$1% Critical Chance when Aiming for 9s.",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritChanceMod",
+        "GainPerRank": 0.225,
+        "Condition": "ON HEADSHOT"
+      }]
+    },
+    "baneofcorpus": {
+      "ModName": "Bane of Corpus",
+      "ModID": "baneofcorpus",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleDamageCorpus.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Damage to Corpus",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CorpusFactionMod",
+        "GainPerRank": 0.05,
+        "Condition": "CORPUS"
+      }]
+    },
+    "baneofgrineer": {
+      "ModName": "Bane of Grineer",
+      "ModID": "baneofgrineer",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleDamageGrineer.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Damage to Grineer",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "GrineerFactionMod",
+        "GainPerRank": 0.05,
+        "Condition": "GRINEER"
+      }]
+    },
+    "baneofinfested": {
+      "ModName": "Bane of Infested",
+      "ModID": "baneofinfested",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleDamageInfested.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Damage to Infested",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "InfestedFactionMod",
+        "GainPerRank": 0.05,
+        "Condition": "INFESTED"
+      }]
+    },
+    "bladedrounds": {
+      "ModName": "Bladed Rounds",
+      "ModID": "bladedrounds",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//CritDamageWhileAiming.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "On Kill: +$1% Critical Damage when Aiming for 9s.",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritMultiplierMod",
+        "GainPerRank": 0.20,
+        "Condition": "ON KILL"
+      }]
+    },
+    "catalyzerlink": {
+      "ModName": "Catalyzer Link",
+      "ModID": "catalyzerlink",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//StatusChanceWhileAiming.jpeg",
+      "Rarity": "Common",
+      "Description": "On Ability Cast: +$1% Status Chance when Aiming for 9s.",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "StatusChanceMod",
+        "GainPerRank": 0.10,
+        "Condition": "ON ABILITY CAST"
+      }]
+    },
+    "crashcourse": {
+      "ModName": "Crash Course",
+      "ModID": "crashcourse",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//EventImpactDamageRifleMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Impact",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ImpactMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "criticaldelay": {
+      "ModName": "Critical Delay",
+      "ModID": "criticaldelay",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//CorruptedCriticalRateForFireRateMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Critical Chance $2% Fire Rate",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "CritChanceMod",
+          "GainPerRank": 0.08
+        },
+        {
+          "Property": "FireRateMod",
+          "GainPerRank": -0.06
+        }
+      ]
+    },
+    "cryorounds": {
+      "ModName": "Cryo Rounds",
+      "ModID": "cryorounds",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleFreezeDamageMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Cold",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "D",
+      "Effects": [{
+        "Property": "ColdMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "fangedfusillade": {
+      "ModName": "Fanged Fusillade",
+      "ModID": "fangedfusillade",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//EventSlashDamageRifleMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Slash",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "SlashMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "fasthands": {
+      "ModName": "Fast Hands",
+      "ModID": "fasthands",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleReloadSpeedMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Reload Speed",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ReloadTimeMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "hammershot": {
+      "ModName": "Hammer Shot",
+      "ModID": "hammershot",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//DoubleMods//RifleHammerSHotMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Critical Damage +$2% Status Chance",
+      "ModType": "RIFLE",
+      "Ranks": 4,
+      "BaseCost": 6,
+      "Polarity": "D",
+      "Effects": [{
+          "Property": "CritMultiplierMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.10
+        }
+      ]
+    },
+    "heavycaliber": {
+      "ModName": "Heavy Caliber",
+      "ModID": "heavycaliber",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//CorruptedDmgForRecoilRifleMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Damage $2% Accuracy",
+      "ModType": "RIFLE",
+      "Ranks": 11,
+      "BaseCost": 6,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "DamageMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "AccuracyMod",
+          "GainPerRank": -0.05
+        }
+      ]
+    },
+    "hellfire": {
+      "ModName": "Hellfire",
+      "ModID": "hellfire",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleFireDamageMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Heat",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "HeatMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "highvoltage": {
+      "ModName": "High Voltage",
+      "ModID": "highvoltage",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//ElectEventRifleMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Electricity +$2% Status Chance",
+      "ModType": "RIFLE",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "ElectricityMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "infectedclip": {
+      "ModName": "Infected Clip",
+      "ModID": "infectedclip",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//PoisonDamageRifleMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Toxin",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ToxinMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "magazinewarp": {
+      "ModName": "Magazine Warp",
+      "ModID": "magazinewarp",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleClipMaxMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Magazine Capacity",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "MagazineMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "malignantforce": {
+      "ModName": "Malignant Force",
+      "ModID": "malignantforce",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//PoisonEventRifleMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Toxin +$2% Status Chance",
+      "ModType": "RIFLE",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "ToxinMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "piercingcaliber": {
+      "ModName": "Piercing Caliber",
+      "ModID": "piercingcaliber",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//EventPunctureDamageModRifle.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Puncture",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "PunctureMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "piercinghit": {
+      "ModName": "Piercing Hit",
+      "ModID": "piercinghit",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleArmorPiercingMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Puncture",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "PunctureMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "pointstrike": {
+      "ModName": "Point Strike",
+      "ModID": "pointstrike",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleCritChanceMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Critical Chance",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritChanceMod",
+        "GainPerRank": 0.25
+      }]
+    },
+    "primedbaneofcorpus": {
+      "ModName": "Primed Bane of Corpus",
+      "ModID": "primedbaneofcorpus",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleDamageCorpus.jpeg",
+      "Rarity": "Legendary",
+      "Description": "+$1% Damage to Corpus",
+      "ModType": "RIFLE",
+      "Ranks": 11,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CorpusFactionMod",
+        "GainPerRank": 0.05,
+        "Condition": "CORPUS"
+      }]
+    },
+    "primedbaneofgrineer": {
+      "ModName": "Primed Bane of Grineer",
+      "ModID": "primedbaneofgrineer",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleDamageGrineer.jpeg",
+      "Rarity": "Legendary",
+      "Description": "+$1% Damage to Grineer",
+      "ModType": "RIFLE",
+      "Ranks": 11,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "GrineerFactionMod",
+        "GainPerRank": 0.05,
+        "Condition": "GRINEER"
+      }]
+    },
+    "primedbaneofinfested": {
+      "ModName": "Primed Bane of Infested",
+      "ModID": "primedbaneofinfested",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleDamageInfested.jpeg",
+      "Rarity": "Legendary",
+      "Description": "+$1% Damage to Infested",
+      "ModType": "RIFLE",
+      "Ranks": 11,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "InfestedFactionMod",
+        "GainPerRank": 0.05,
+        "Condition": "INFESTED"
+      }]
+    },
+    "primedcryorounds": {
+      "ModName": "Primed Cryo Rounds",
+      "ModID": "primedcryorounds",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleFreezeDamageMod.jpeg",
+      "Rarity": "Legendary",
+      "Description": "+$1% Cold",
+      "ModType": "RIFLE",
+      "Ranks": 11,
+      "BaseCost": 6,
+      "Polarity": "D",
+      "Effects": [{
+        "Property": "ColdMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "primedfasthands": {
+      "ModName": "Primed Fast Hands",
+      "ModID": "primedfasthands",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleReloadSpeedMod.jpeg",
+      "Rarity": "Legendary",
+      "Description": "+$1% Reload Speed",
+      "ModType": "RIFLE",
+      "Ranks": 11,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ReloadTimeMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "primedshred": {
+      "ModName": "Primed Shred",
+      "ModID": "primedshred",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//Shred.jpeg",
+      "Rarity": "Legendary",
+      "Description": "+$1% Fire Rate +X.X Punch Through",
+      "ModType": "RIFLE",
+      "Ranks": 11,
+      "BaseCost": 6,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "FireRateMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "rifleaptitude": {
+      "ModName": "Rifle Aptitude",
+      "ModID": "rifleaptitude",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//StatusChanceRifleMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Status Chance",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "D",
+      "Effects": [{
+        "Property": "StatusChanceMod",
+        "GainPerRank": 0.025
+      }]
+    },
+    "rimerounds": {
+      "ModName": "Rime Rounds",
+      "ModID": "rimerounds",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//IceEventRifleMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Cold +$2% Status Chance",
+      "ModType": "RIFLE",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "ColdMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "rupture": {
+      "ModName": "Rupture",
+      "ModID": "rupture",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//ImpactDamageRifleMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Impact",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ImpactMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "sawtoothclip": {
+      "ModName": "Sawtooth Clip",
+      "ModID": "sawtoothclip",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//BleedDamageRifleMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Slash",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "SlashMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "serration": {
+      "ModName": "Serration",
+      "ModID": "serration",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleDamageAmountMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Damage",
+      "ModType": "RIFLE",
+      "Ranks": 11,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "DamageMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "shred": {
+      "ModName": "Shred",
+      "ModID": "shred",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//Shred.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Fire Rate +X.X Punch Through",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "FireRateMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "speedtrigger": {
+      "ModName": "Speed Trigger",
+      "ModID": "speedtrigger",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleFireRateMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Fire Rate",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "FireRateMod",
+        "GainPerRank": 0.10
+      }]
+    },
+    "splitchamber": {
+      "ModName": "Split Chamber",
+      "ModID": "splitchamber",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleFireIterationsMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Multishot",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 10,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "MultishotMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "stormbringer": {
+      "ModName": "Stormbringer",
+      "ModID": "stormbringer",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleElectricityDamageMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Electricity",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ElectricityMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "thermiterounds": {
+      "ModName": "Thermite Rounds",
+      "ModID": "thermiterounds",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//DualStatFireProcRifle.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Heat +$2% Status Chance",
+      "ModType": "RIFLE",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "HeatMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "vileacceleration": {
+      "ModName": "Vile Acceleration",
+      "ModID": "vileacceleration",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//CorruptedFireRateDamageRifleMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Fire Rate $2% Damage",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "FireRateMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "DamageMod",
+          "Operator": "Add",
+          "GainPerRank": -0.025
+        }
+      ]
+    },
+    "vileprecision": {
+      "ModName": "Vile Precision",
+      "ModID": "vileprecision",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//CorruptedRecoilForFireRateMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "-X.X Weapon Recoil $1% Fire Rate",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "FireRateMod",
+        "GainPerRank": -0.06
+      }]
+    },
+    "vitalsense": {
+      "ModName": "Vital Sense",
+      "ModID": "vitalsense",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Rifle//RifleCritDamageMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Critical Damage",
+      "ModType": "RIFLE",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritMultiplierMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "wildfire": {
+      "ModName": "Wildfire",
+      "ModID": "wildfire",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//DoubleMods//RifleWildfireMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Magazine Capacity +$2% Heat",
+      "ModType": "RIFLE",
+      "Ranks": 4,
+      "BaseCost": 6,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "MagazineMod",
+          "GainPerRank": 0.05
+        },
+        {
+          "Property": "HeatMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    }
+  },
+  "Shotgun": {
+    "acceleratedblast": {
+      "ModName": "Accelerated Blast",
+      "ModID": "acceleratedblast",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//DoubleMods//ShotgunAcceleratedBlast.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Fire Rate +$2% Puncture",
+      "ModType": "SHOTUGN",
+      "Ranks": 4,
+      "BaseCost": 6,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "FireRateMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "PunctureMod",
+          "Operator": "Add",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "ammostock": {
+      "ModName": "Ammo Stock",
+      "ModID": "ammostock",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunClipMaxMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Magazine Capacity",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "MagazineMod",
+        "GainPerRank": 0.10
+      }]
+    },
+    "blaze": {
+      "ModName": "Blaze",
+      "ModID": "blaze",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//DoubleMods//ShotgunBlazeMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Damage +$2% Heat",
+      "ModType": "SHOTUGN",
+      "Ranks": 4,
+      "BaseCost": 6,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "DamageMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "HeatMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "blunderbuss": {
+      "ModName": "Blunderbuss",
+      "ModID": "blunderbuss",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunCriticalChanceMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Critical Chance",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritChanceMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "breachloader": {
+      "ModName": "Breach Loader",
+      "ModID": "breachloader",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//EventPunctureDamageModShotgun.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Puncture",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "PunctureMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "burdenedmagazine": {
+      "ModName": "Burdened Magazine",
+      "ModID": "burdenedmagazine",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//CorruptedClipsizeForReloadShotgunMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Magazine Capacity $2% Reload Speed",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+          "Property": "MagazineMod",
+          "GainPerRank": 0.10
+        },
+        {
+          "Property": "ReloadTimeMod",
+          "GainPerRank": -0.03
+        }
+      ]
+    },
+    "chargedshell": {
+      "ModName": "Charged Shell",
+      "ModID": "chargedshell",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunElectricityDamageMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Electricity",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ElectricityMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "chillinggrasp": {
+      "ModName": "Chilling Grasp",
+      "ModID": "chillinggrasp",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunFreezeDamageMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Cold",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "D",
+      "Effects": [{
+        "Property": "ColdMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "chillingreload": {
+      "ModName": "Chilling Reload",
+      "ModID": "chillingreload",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ColdDmgReloadSpeedMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Cold +$2% Reload Speed",
+      "ModType": "SHOTUGN",
+      "Ranks": 4,
+      "BaseCost": 2,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "ColdMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "ReloadTimeMod",
+          "GainPerRank": 0.10
+        }
+      ]
+    },
+    "cleansecorpus": {
+      "ModName": "Cleanse Corpus",
+      "ModID": "cleansecorpus",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunDamageCorpus.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Damage to Corpus",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CorpusFactionMod",
+        "GainPerRank": 0.05,
+        "Condition": "CORPUS"
+      }]
+    },
+    "cleansegrineer": {
+      "ModName": "Cleanse Grineer",
+      "ModID": "cleansegrineer",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunDamageGrineer.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Damage to Grineer",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "GrineerFactionMod",
+        "GainPerRank": 0.05,
+        "Condition": "GRINEER"
+      }]
+    },
+    "cleanseinfested": {
+      "ModName": "Cleanse Infested",
+      "ModID": "cleanseinfested",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunDamageInfested.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Damage to Infested",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "InfestedFactionMod",
+        "GainPerRank": 0.05,
+        "Condition": "INFESTED"
+      }]
+    },
+    "contagiousspread": {
+      "ModName": "Contagious Spread",
+      "ModID": "contagiousspread",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//PoisonDamageShotgunMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Toxin",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ToxinMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "criticaldeceleration": {
+      "ModName": "Critical Deceleration",
+      "ModID": "criticaldeceleration",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//CorruptedCritChanceFireRateShotgunMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Critical Chance $2% Fire RAte",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "CritChanceMod",
+          "GainPerRank": 0.08
+        },
+        {
+          "Property": "FireRateMod",
+          "GainPerRank": -0.05
+        }
+      ]
+    },
+    "disruptor": {
+      "ModName": "Disruptor",
+      "ModID": "disruptor",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ImpactDamageShotgunMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Impact",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ImpactMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "flechette": {
+      "ModName": "Flechette",
+      "ModID": "flechette",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunPunctureDepthMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Puncture",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "PunctureMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "frailmomentum": {
+      "ModName": "Frail Momentum",
+      "ModID": "frailmomentum",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//CorruptedFireRateDamageShotgunMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Fire Rate $2% Damage",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "FireRateMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "DamageMod",
+          "GainPerRank": -0.025
+        }
+      ]
+    },
+    "frigidblast": {
+      "ModName": "Frigid Blast",
+      "ModID": "frigidblast",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//IceEventShotgunMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Cold +$2% Status Chance",
+      "ModType": "SHOTUGN",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "ColdMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "fullcontact": {
+      "ModName": "Full Contact",
+      "ModID": "fullcontact",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//EventImpactDamageShotgunMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Impact",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ImpactMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "hellschamber": {
+      "ModName": "Hell's Chamber",
+      "ModID": "hellschamber",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunFireIterationsMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Multishot",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 10,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "MultishotMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "incendiarycoat": {
+      "ModName": "Incendiary Coat",
+      "ModID": "incendiarycoat",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunFireDamageMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Heat",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "HeatMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "lasersight": {
+      "ModName": "Laser Sight",
+      "ModID": "lasersight",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//CritChanceWhileAiming.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "On Headshot: +$1% Critical Chance when Aiming for 9s.",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritChanceMod",
+        "GainPerRank": 0.20,
+        "Condition": "ON HEADSHOT"
+      }]
+    },
+    "nanoapplicator": {
+      "ModName": "Nano-Applicator",
+      "ModID": "nanoapplicator",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//StatusChanceWhileAiming.jpeg",
+      "Rarity": "Rare",
+      "Description": "On Ability Cast: +$1% Status Chance when Aiming for 9s.",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "StatusChanceMod",
+        "GainPerRank": 0.15,
+        "Condition": "ON ABILITY CAST"
+      }]
+    },
+    "narrowbarrel": {
+      "ModName": "Narrow Barrel",
+      "ModID": "narrowbarrel",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//AccuracyWhileAiming.jpeg",
+      "Rarity": "Rare",
+      "Description": "On Hit: +$1% Accuracy when Aiming for 9s",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "AccuracyMod",
+        "GainPerRank": 0.05,
+        "Condition": "ON HIT"
+      }]
+    },
+    "pointblank": {
+      "ModName": "Point Blank",
+      "ModID": "pointblank",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunDamageAmountMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Damage",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "DamageMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "primedpointblank": {
+      "ModName": "Primed Point Blank",
+      "ModID": "primedpointblank",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunDamageAmountMod.jpeg",
+      "Rarity": "Legendary",
+      "Description": "+$1% Damage",
+      "ModType": "SHOTUGN",
+      "Ranks": 11,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "DamageMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "primedravage": {
+      "ModName": "Primed Ravage",
+      "ModID": "primedravage",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunCritDamageMod.jpeg",
+      "Rarity": "Legendary",
+      "Description": "+$1% Critical Damage",
+      "ModType": "SHOTUGN",
+      "Ranks": 11,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritMultiplierMod",
+        "GainPerRank": 0.10
+      }]
+    },
+    "ravage": {
+      "ModName": "Ravage",
+      "ModID": "ravage",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunCritDamageMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Critical Damage",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritMultiplierMod",
+        "GainPerRank": 0.10
+      }]
+    },
+    "repeaterclip": {
+      "ModName": "Repeater Clip",
+      "ModID": "repeaterclip",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//FireRateWhileAiming.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "On Reload: +$1% Fire Rate when Aiming for 9s.",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "FireRateMod",
+        "GainPerRank": 0.175,
+        "Condition": "ON RELOAD"
+      }]
+    },
+    "scatteringinferno": {
+      "ModName": "Scattering Inferno",
+      "ModID": "scatteringinferno",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//DualStatFireProcShotgun.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Heat +$2% Status Chance",
+      "ModType": "SHOTUGN",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "HeatMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "Operator": "Multiply",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "seekingfury": {
+      "ModName": "Seeking Fury",
+      "ModID": "seekingfury",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//SeekingFury.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Reload Speed +X.X Punch Through",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "ReloadTimeMod",
+        "GainPerRank": 0.025
+      }]
+    },
+    "shellcompression": {
+      "ModName": "Shell Compression",
+      "ModID": "shellcompression",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunAmmoMaxMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Ammo Maximum",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "AmmoMaxMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "shellshock": {
+      "ModName": "Shell Shock",
+      "ModID": "shellshock",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ElectEventShotgunMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Electricity +$2% Status Chance",
+      "ModType": "SHOTUGN",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "ElectricityMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "shotgunsavvy": {
+      "ModName": "Shotgun Savvy",
+      "ModID": "shotgunsavvy",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//StatusChanceShotgunMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Status Chance",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "D",
+      "Effects": [{
+        "Property": "StatusChanceMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "shotgunspazz": {
+      "ModName": "Shotgun Spazz",
+      "ModID": "shotgunspazz",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunFireRateMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Fire Rate",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "FireRateMod",
+        "GainPerRank": 0.15
+      }]
+    },
+    "shrapnelshot": {
+      "ModName": "Shrapnel Shot",
+      "ModID": "shrapnelshot",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//CritDamageWhileAiming.jpeg",
+      "Rarity": "Common",
+      "Description": "On Kill: +$1% Critical Damage when Aiming for 9s.",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "CritMultiplierMod",
+        "GainPerRank": 0.165,
+        "Condition": "ON KILL"
+      }]
+    },
+    "shredder": {
+      "ModName": "Shredder",
+      "ModID": "shredder",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//BleedDamageShotgunMod.jpeg",
+      "Rarity": "Common",
+      "Description": "+$1% Slash",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "SlashMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "sweepingserration": {
+      "ModName": "Sweeping Serration",
+      "ModID": "sweepingserration",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//EventSlashDamageShotgunMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Slash",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 6,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "SlashMod",
+        "GainPerRank": 0.20
+      }]
+    },
+    "tacticalpump": {
+      "ModName": "Tactical Pump",
+      "ModID": "tacticalpump",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//ShotgunReloadSpeedMod.jpeg",
+      "Rarity": "Uncommon",
+      "Description": "+$1% Reload Speed",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 2,
+      "Polarity": "Bar",
+      "Effects": [{
+        "Property": "ReloadTimeMod",
+        "GainPerRank": 0.05
+      }]
+    },
+    "taintedshell": {
+      "ModName": "Tainted Shell",
+      "ModID": "taintedshell",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//CorruptedSpreadForFireRateShotgunMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "-XX% Spread $1% Fire Rate",
+      "ModType": "SHOTUGN",
+      "Ranks": 11,
+      "BaseCost": 4,
+      "Polarity": "D",
+      "Effects": [{
+        "Property": "FireRateMod",
+        "GainPerRank": -0.05
+      }]
+    },
+    "toxicbarrage": {
+      "ModName": "Toxic Barrage",
+      "ModID": "toxicbarrage",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//PoisonEventShotgunMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Toxin +$2% Status Chance",
+      "ModType": "SHOTUGN",
+      "Ranks": 4,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+          "Property": "ToxinMod",
+          "GainPerRank": 0.15
+        },
+        {
+          "Property": "StatusChanceMod",
+          "GainPerRank": 0.15
+        }
+      ]
+    },
+    "viciousspread": {
+      "ModName": "Vicious Spread",
+      "ModID": "viciousspread",
+      "ImageURL": "http://content.warframe.com/MobileExport//Lotus//Interface//Cards//Images//Shotgun//CorruptedDamageForSpreadShotgunMod.jpeg",
+      "Rarity": "Rare",
+      "Description": "+$1% Damage +XX% Spread",
+      "ModType": "SHOTUGN",
+      "Ranks": 6,
+      "BaseCost": 4,
+      "Polarity": "V",
+      "Effects": [{
+        "Property": "DamageMod",
+        "GainPerRank": 0.15
+      }]
+    }
+  }
+}
